@@ -1092,23 +1092,24 @@
                    <button type="submit" class="rs-submit-btn">KÝ GỬI NGAY</button>
                </form>
            </div>
-   <div class="rs-video-section" id="video-trigger">
-     <video preload="metadata" poster="https://file.hstatic.net/200000865177/article/video_7_fbc95109d85543329be6eb4934e0fa72.jpg"></video>
-     
-     <!-- nút play -->
-     <div class="play-button">
-       ▶
-     </div>
-   </div>
-   
-   </div>
-   </div>
-   <div id="videoModal" class="rs-modal">
-       <div class="rs-modal-content">
-           <span class="rs-close-btn">&times;</span>
-           <video id="videoPlayer" controls></video>
-       </div>
-   </div>
+  <div class="rs-video-section" id="video-trigger" data-video="https://www.youtube.com/watch?v=GaiE66Gpvvs">
+    <video preload="metadata"
+      poster="https://file.hstatic.net/200000865177/article/video_7_fbc95109d85543329be6eb4934e0fa72.jpg"></video>
+  
+    <!-- nút play -->
+    <div class="play-button">▶</div>
+  </div>
+  
+  <div id="videoModal" class="rs-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+              background:rgba(0,0,0,0.8);justify-content:center;align-items:center;z-index:1000;">
+    <div class="rs-modal-content" style="position:relative;width:80%;max-width:800px;">
+      <span class="rs-close-btn" style="position:absolute;top:-35px;right:-5px;color:white;
+                   font-size:36px;cursor:pointer;">&times;</span>
+      <iframe id="videoPlayer" width="100%" height="450" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"
+        style="border-radius:12px;"></iframe>
+    </div>
+  </div>
+
  </section>
       <!-- bđs 1-css trong file style.css của bds -->
       <section class="bds-section">
@@ -5375,23 +5376,6 @@ function renderRealEstateItems() {
         carouselBottom.hide();
         return;
     }
-    
-    // Ẩn hàng dưới khi có filter
-    // if (currentFilter !== 'all') {
-    //     carouselBottom.hide();
-    //     carouselTop.css('margin-top', '0');
-    //     renderCarousel(carouselTop, filteredItems);
-    // } else {
-    //     carouselBottom.show();
-    //     carouselTop.css('margin-top', '3rem'); // Khoảng cách giữa 2 carousel
-        
-    //     // Render hàng trên (1 -> 10)
-    //     renderCarousel(carouselTop, filteredItems);
-        
-    //     // Render hàng dưới (10 -> 1)
-    //     const reversedItems = [...filteredItems].reverse();
-    //     renderCarousel(carouselBottom, reversedItems);
-    // }
 
     renderCarousel(carousel, filteredItems);
     renderCarousel2(carouselTop, filteredItems);
@@ -5756,33 +5740,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
  <script>
-    const videoTrigger = document.getElementById('video-trigger');
-    const videoModal = document.getElementById('videoModal');
-    const closeBtn = document.querySelector('.rs-close-btn');
-    const videoPlayer = document.getElementById('videoPlayer');
+  const videoTrigger = document.getElementById('video-trigger');
+  const videoModal = document.getElementById('videoModal');
+  const closeBtn = document.querySelector('.rs-close-btn');
+  const videoPlayer = document.getElementById('videoPlayer');
 
-    const videoSrc = "./public/assets/images/videodemo.mp4"; 
+  // Lấy link video từ thuộc tính data-video
+  let videoSrc = videoTrigger.getAttribute('data-video');
 
-    videoTrigger.onclick = function() {
-        videoModal.style.display = "flex";
-        videoPlayer.src = videoSrc;
-        videoPlayer.play();
-    };
+  // Nếu link không phải dạng embed thì tự chuyển sang dạng embed
+  if (!videoSrc.includes('embed')) {
+    const videoIdMatch = videoSrc.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    if (videoIdMatch && videoIdMatch[1]) {
+      videoSrc = `https://www.youtube.com/embed/${videoIdMatch[1]}`;
+    }
+  }
 
-    closeBtn.onclick = function() {
-        videoModal.style.display = "none";
-        videoPlayer.pause();
-        videoPlayer.src = "";
-    };
+  // Mở modal và phát video
+  videoTrigger.onclick = function() {
+    videoModal.style.display = "flex";
+    videoPlayer.src = `${videoSrc}?autoplay=1`;
+  };
 
-    window.onclick = function(event) {
-        if (event.target == videoModal) {
-            videoModal.style.display = "none";
-            videoPlayer.pause();
-            videoPlayer.src = "";
-        }
-    };
-    </script>
+  // Đóng modal
+  closeBtn.onclick = function() {
+    videoModal.style.display = "none";
+    videoPlayer.src = "";
+  };
+
+  // Đóng khi click ra ngoài
+  window.onclick = function(event) {
+    if (event.target === videoModal) {
+      videoModal.style.display = "none";
+      videoPlayer.src = "";
+    }
+  };
+</script>
     <!-- phần category cho text -->
 <script>
   function debounce(fn, wait) {
