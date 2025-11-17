@@ -1228,6 +1228,11 @@
                     alt="Zalo" style="width: 24px; height: 24px;" />
                 </a>
               </div>
+              <a onclick="toggleConsultModal(true)"
+                class="btn fw-semibold w-100 d-flex align-items-center justify-content-center text-white mt-3"
+                style="background-color: #3465FF; border-radius: 8px; padding: 10px 12px; font-weight: bold;">
+                Yêu cầu tư vấn
+              </a>
             </div>
           
             <div class="bg-white p-4 rounded shadow-sm filter-box">
@@ -1448,6 +1453,124 @@
     </div>
   </div>
 </div>
+<!-- Modal tư vấn -->
+<div id="consult-modal" class="consult-modal">
+  <div class="consult-modal-content">
+
+    <!-- Nút đóng -->
+    <span class="consult-close" onclick="toggleConsultModal(false)">&times;</span>
+
+    <div class="row g-3" style="background-color: white;">
+      
+      <div class="line-bottom">
+        <h5>Yêu cầu tư vấn</h5>
+      </div>
+
+      <!-- BÊN TRÁI: ITEM + padding -->
+      <div class="col-12 col-md-6">
+        <div style="padding: 20px;">
+          <div class="re-card card border-0 shadow-sm overflow-hidden h-100">
+            <div class="position-relativ re-img-wrap p-3">
+              <img id="modal-main-img" src="./public/assets/images/BDS/item1/1.png" class="w-100 re-main-img">
+            </div>
+
+            <div class="p-3">
+              <div class="d-flex justify-content-between gap-2 mb-3">
+                <img onclick="changeModalImage(this)"
+                  src="./public/assets/images/BDS/item1/1.png" class="re-thumb border border-primary">
+                <img onclick="changeModalImage(this)"
+                  src="./public/assets/images/BDS/item1/2.png" class="re-thumb">
+                <img onclick="changeModalImage(this)"
+                  src="./public/assets/images/BDS/item1/3.png" class="re-thumb">
+                <img onclick="changeModalImage(this)"
+                  src="./public/assets/images/BDS/item1/4.png" class="re-thumb">
+              </div>
+
+              <h5 class="fw-semibold mb-1">Bán nhà đường ô tô tránh nhau...</h5>
+              <p class="text-muted small mb-3">Sân để xe máy rộng rãi... </p>
+              <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mb-3">
+                    <span class="badge bg-danger text-white fw-bold px-3 py-2 fs-6 rounded-pill">5.5 tỷ</span>
+                    <span class="text-secondary small"><i class="fa-solid fa-ruler-combined text-primary me-1"></i>72 m²</span>
+                    <span class="text-secondary small"><i class="fa-solid fa-house text-success me-1"></i>Nhà phố</span>
+                  </div>
+          
+                  <div class="mb-3">
+                    <div class="text-muted small"><i class="fa-solid fa-location-dot text-danger me-1"></i><s>Quận 1, TP.HCM</s>
+                    </div>
+                    <div class="text-success small fw-medium mt-1"><i class="fa-solid fa-map-location-dot me-1"></i>Vinhomes
+                      Central Park, Bình Thạnh</div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BÊN PHẢI: FORM + padding + giữ nguyên layout -->
+      <div class="col-12 col-md-6">
+        <div style="padding: 20px;">
+          
+          <form id="form-contact-modal" action="https://we1.io.vn/lien-he/gui" method="post" class="contact-form">
+            <div class="row">
+              <div class="contact-error text-center"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <input type="text" class="form-control input-style-2" id="name" name="name"
+                    placeholder="Tên của bạn">
+                  <span class="alert alert-error"></span>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <input type="text" class="form-control input-style-2" id="phone" name="phone"
+                    placeholder="Số điện thoại *">
+                  <span class="alert alert-error"></span>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <input type="email" class="form-control input-style-2" id="email" name="email"
+                    placeholder="Email">
+                  <span class="alert alert-error"></span>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <input type="text" class="form-control input-style-2" id="subject" name="subject"
+                    value="Bất động sản Bán nhà đường ô tô ..." placeholder="Subject *">
+                  <span class="alert alert-error"></span>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <textarea class="form-control input-style-2" id="comment" name="content" placeholder="Nội dung"
+                  cols="30" rows="5"></textarea>
+
+                <div class="contact-sub-btn margin-top-20">
+                  <input type="hidden" class="form-control input-style-2" id="web" name="link"
+                    value="https://we1.io.vn/dong-ho-nam/dong-ho-nam-day-thep-lua-mau-vang?utm_source=zalo&amp;utm_medium=zalo&amp;utm_campaign=zalo">
+
+                  <button type="button" id="btn-consult" class="btn header-background-text-color"
+                    onclick="guiYeuCauTuVan()">
+                    <b>Gửi yêu cầu</b>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 </main>
 
  <footer class="fe-footer">
@@ -1625,7 +1748,7 @@
     <script src="public/assets/js/jquery.min.js"></script>
     
     <script src="public/js/home.js"></script>
-      
+    
     <script src="public/js/custom.js"></script>
       <script>
       jQuery(document).ready(function($) {
@@ -1761,5 +1884,22 @@
       }
     }
     </script>
+    <script>
+        function toggleConsultModal(show = true) {
+          document.getElementById("consult-modal").style.display = show ? "flex" : "none";
+        }
+
+        // đổi ảnh trong modal
+        function changeModalImage(el) {
+          document.getElementById("modal-main-img").src = el.src;
+
+          // bỏ border cũ
+          document.querySelectorAll(".re-thumb").forEach(img => img.classList.remove("border", "border-primary"));
+
+          // thêm border vào cái đang chọn
+          el.classList.add("border", "border-primary");
+        }
+        </script>
+
   </body>
 </html>
