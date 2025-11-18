@@ -730,11 +730,12 @@
       <div class="tabs-wrapper d-flex gap-4 mb-4 border-bottom">
         <a href="#" id="tabOverview" class="tab-link active" onclick="showTab('tabOverview')">Tổng quan</a>
         <a href="#" id="tabMap" class="tab-link" onclick="showTab('tabMap')">Xem trên bản đồ</a>
+        <a href="#" id="tabComment" class="tab-link" onclick="showTab('tabComment')">Bình luận</a>
         <a href="#" id="tabReview" class="tab-link" onclick="showTab('tabReview')">Đánh giá</a>
       </div>
 
         <div id="contentOverview" class="tab-content">
-          <p id="detailDescription" class="text-secondary lh-lg mb-4"></p>
+          <p id="detailDescription" class="text-secondary lh-lg mb-4">Ngôi nhà có đường ô tô tránh nhau và xe tải 3 tấn đi lại dễ dàng, nổi bật với sân rộng rãi, an toàn ngay cạnh phòng khách lớn để để xe máy thoải mái, cùng với phòng khách thiết kế mở, tràn ngập ánh sáng tự nhiên, là không gian lý tưởng để sinh hoạt gia đình và tiếp đón khách.</p>
         </div>
 
         <div id="contentMap" class="tab-content d-none">
@@ -762,7 +763,7 @@
         </div>
 
         <!-- Bình luận -->
-        <div id="commentSection">
+        <div id="contentComment" class="tab-content d-none">
           <h2 class="section-title__comment mb-3">Bình luận</h2>
           <form class="comment-form">
             <div class="mb-3">
@@ -1795,8 +1796,7 @@
           // Lấy tất cả tab và nội dung
           const tabs = document.querySelectorAll(".tabs-wrapper a");
           const tabContents = document.querySelectorAll(".tab-content");
-          const commentSection = document.getElementById("commentSection");
-
+          const commentSection = document.getElementById("contentComment");
           // Ẩn toàn bộ nội dung tab
           tabContents.forEach((content) => content.classList.add("d-none"));
 
@@ -1815,12 +1815,13 @@
             selectedContent.classList.remove("d-none");
           }
 
-          // Ẩn phần bình luận khi đang ở tab bản đồ
-          if (tabId === "tabMap") {
-            commentSection?.classList.add("d-none");
+          // hiển thị comment nếu là đánh giá && comment
+          if (tabId === "tabReview" || tabId === "tabComment") {
+            commentSection.classList.remove("d-none");
           } else {
-            commentSection?.classList.remove("d-none");
+            commentSection.classList.add("d-none");
           }
+
         }
 
         // slider bar
