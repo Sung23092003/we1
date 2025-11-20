@@ -642,197 +642,199 @@
     </button>
 <div id="sidebarOverlay"></div>
 
-<div class="container-xl">
+<div class="container-xl" style="margin-top: 40px; margin-bottom: 40px;">
   <div class="row g-4 flex-lg-nowrap">
     <!-- Main Content -->
-    <div id="mainContent" class="col bg-white p-4 p-md-5 rounded shadow-sm">
-
-      <h1 id="detailTitle" class="fs-4 fw-semibold text-dark mb-2">
-        Bán nhà đường ô tô tránh nhau, xe tải 3 tấn đi thoải mái
-      </h1>
-
-      <p class="text-secondary mb-4">
-        Sân để xe máy rộng rãi, an toàn, ngay cạnh phòng khách lớn. Phòng khách được thiết kế mở, tràn ngập ánh sáng tự
-        nhiên, là nơi lý tưởng để cả gia đình quây quần hoặc tiếp đón bạn bè.
-      </p>
-
-      <div class="d-flex flex-column gap-3">
-        <!-- Ảnh chính -->
-        <div>
-          <img id="detailMainImage" src="./public/assets/images/BDS/item1/1.png" alt="Ảnh chính"
-            class="img-fluid rounded main-image" />
+    <div id="mainContent" class="col">
+      <div class="rounded shadow-sm bg-white p-4 p-md-5">
+        <h1 id="detailTitle" class="fs-4 fw-semibold text-dark mb-2">
+          Bán nhà đường ô tô tránh nhau, xe tải 3 tấn đi thoải mái
+        </h1>
+      
+        <p class="text-secondary mb-4">
+          Sân để xe máy rộng rãi, an toàn, ngay cạnh phòng khách lớn. Phòng khách được thiết kế mở, tràn ngập ánh sáng tự
+          nhiên, là nơi lý tưởng để cả gia đình quây quần hoặc tiếp đón bạn bè.
+        </p>
+      
+        <div class="d-flex flex-column gap-3">
+          <!-- Ảnh chính -->
+          <div>
+            <img id="detailMainImage" src="./public/assets/images/BDS/item1/1.png" alt="Ảnh chính"
+              class="img-fluid rounded main-image" />
+          </div>
+      
+          <!-- Ảnh thumbnails -->
+          <div id="detailThumbnails" class="d-flex flex-nowrap overflow-auto justify-content-start gap-2 mb-4">
+            <img src="./public/assets/images/BDS/item1/1.png" class="thumbnail-image rounded" />
+            <img src="./public/assets/images/BDS/item1/2.png" class="thumbnail-image rounded" />
+            <img src="./public/assets/images/BDS/item1/3.png" class="thumbnail-image rounded" />
+            <img src="./public/assets/images/BDS/item1/4.png" class="thumbnail-image rounded" />
+            <img src="./public/assets/images/BDS/item1/5.png" class="thumbnail-image rounded" />
+            <img src="./public/assets/images/BDS/item1/6.png" class="thumbnail-image rounded" />
+            <img src="./public/assets/images/BDS/item1/7.png" class="thumbnail-image rounded" />
+            <img src="./public/assets/images/BDS/item1/8.png" class="thumbnail-image rounded" />
+            <img src="./public/assets/images/BDS/item1/9.png" class="thumbnail-image rounded" />
+          </div>
         </div>
-
-        <!-- Ảnh thumbnails -->
-        <div id="detailThumbnails" class="d-flex flex-nowrap overflow-auto justify-content-start gap-2 mb-4">
-          <img src="./public/assets/images/BDS/item1/1.png" class="thumbnail-image rounded" />
-          <img src="./public/assets/images/BDS/item1/2.png" class="thumbnail-image rounded" />
-          <img src="./public/assets/images/BDS/item1/3.png" class="thumbnail-image rounded" />
-          <img src="./public/assets/images/BDS/item1/4.png" class="thumbnail-image rounded" />
-          <img src="./public/assets/images/BDS/item1/5.png" class="thumbnail-image rounded" />
-          <img src="./public/assets/images/BDS/item1/6.png" class="thumbnail-image rounded" />
-          <img src="./public/assets/images/BDS/item1/7.png" class="thumbnail-image rounded" />
-          <img src="./public/assets/images/BDS/item1/8.png" class="thumbnail-image rounded" />
-          <img src="./public/assets/images/BDS/item1/9.png" class="thumbnail-image rounded" />
+      
+        <!-- Thanh ngang xanh -->
+        <div class="d-flex justify-content-center align-items-center my-2">
+          <span class="divider-bar"></span>
         </div>
-      </div>
-
-      <!-- Thanh ngang xanh -->
-      <div class="d-flex justify-content-center align-items-center my-2">
-        <span class="divider-bar"></span>
-      </div>
-
-      <div class="card-container">
-        <div class="card-item">
-          <i class="fa-solid fa-money-bill-wave card-icon"></i>
-          <p class="card-value" id="detailPrice">5.5 tỷ</p>
-          <p class="card-label">Giá bán</p>
+      
+        <div class="card-container">
+          <div class="card-item">
+            <i class="fa-solid fa-money-bill-wave card-icon"></i>
+            <p class="card-value" id="detailPrice">5.5 tỷ</p>
+            <p class="card-label">Giá bán</p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-star card-icon"></i>
+            <p class="card-value" id="detailArea">72 m²</p>
+            <p class="card-label">Diện tích</p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-bed card-icon"></i>
+            <p class="card-value" id="detailNumberBedRooms">2 phòng</p>
+            <p class="card-label">Số phòng ngủ</p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-house card-icon"></i>
+            <p class="card-value" id="detailHouseOrientation">Đông</p>
+            <p class="card-label">Hướng nhà</p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-compass card-icon"></i>
+            <p class="card-value" id="detailBalconyOrientation">Nam</p>
+            <p class="card-label">Hướng ban công</p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-couch card-icon"></i>
+            <p class="card-value" id="detailInteriot">Đầy đủ</p>
+            <p class="card-label">Nội thất</p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-star card-icon"></i>
+            <p class="card-value" id="detailMenities">Cammera bảo vệ, PCCC</p>
+            <p class="card-label">Tiện ích</p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-clock card-icon"></i>
+            <p class="card-value" id="detailTimes">Ở ngay</p>
+            <p class="card-label">Thời gian</p>
+          </div>
         </div>
-        <div class="card-item">
-          <i class="fa-solid fa-star card-icon"></i>
-          <p class="card-value" id="detailArea">72 m²</p>
-          <p class="card-label">Diện tích</p>
+        <h2 class="section-title mt-4 mb-3">Thông tin chi tiết</h2>
+  
+        <!-- Tabs -->
+        <div class="tabs-wrapper d-flex gap-4 mb-4 border-bottom">
+          <a href="#" id="tabOverview" class="tab-link active" onclick="showTab('tabOverview')">Tổng quan</a>
+          <a href="#" id="tabMap" class="tab-link" onclick="showTab('tabMap')">Xem trên bản đồ</a>
+          <a href="#" id="tabComment" class="tab-link" onclick="showTab('tabComment')">Bình luận</a>
+          <a href="#" id="tabReview" class="tab-link" onclick="showTab('tabReview')">Đánh giá</a>
         </div>
-        <div class="card-item">
-          <i class="fa-solid fa-bed card-icon"></i>
-          <p class="card-value" id="detailNumberBedRooms">2 phòng</p>
-          <p class="card-label">Số phòng ngủ</p>
-        </div>
-        <div class="card-item">
-          <i class="fa-solid fa-house card-icon"></i>
-          <p class="card-value" id="detailHouseOrientation">Đông</p>
-          <p class="card-label">Hướng nhà</p>
-        </div>
-        <div class="card-item">
-          <i class="fa-solid fa-compass card-icon"></i>
-          <p class="card-value" id="detailBalconyOrientation">Nam</p>
-          <p class="card-label">Hướng ban công</p>
-        </div>
-        <div class="card-item">
-          <i class="fa-solid fa-couch card-icon"></i>
-          <p class="card-value" id="detailInteriot">Đầy đủ</p>
-          <p class="card-label">Nội thất</p>
-        </div>
-        <div class="card-item">
-          <i class="fa-solid fa-star card-icon"></i>
-          <p class="card-value" id="detailMenities">Cammera bảo vệ, PCCC</p>
-          <p class="card-label">Tiện ích</p>
-        </div>
-        <div class="card-item">
-          <i class="fa-solid fa-clock card-icon"></i>
-          <p class="card-value" id="detailTimes">Ở ngay</p>
-          <p class="card-label">Thời gian</p>
-        </div>
-      </div>
-      <h2 class="section-title mt-4 mb-3">Thông tin chi tiết</h2>
-
-      <!-- Tabs -->
-      <div class="tabs-wrapper d-flex gap-4 mb-4 border-bottom">
-        <a href="#" id="tabOverview" class="tab-link active" onclick="showTab('tabOverview')">Tổng quan</a>
-        <a href="#" id="tabMap" class="tab-link" onclick="showTab('tabMap')">Xem trên bản đồ</a>
-        <a href="#" id="tabComment" class="tab-link" onclick="showTab('tabComment')">Bình luận</a>
-        <a href="#" id="tabReview" class="tab-link" onclick="showTab('tabReview')">Đánh giá</a>
-      </div>
-
-        <div id="contentOverview" class="tab-content">
-          <p id="detailDescription" class="text-secondary lh-lg mb-4">Ngôi nhà có đường ô tô tránh nhau và xe tải 3 tấn đi lại dễ dàng, nổi bật với sân rộng rãi, an toàn ngay cạnh phòng khách lớn để để xe máy thoải mái, cùng với phòng khách thiết kế mở, tràn ngập ánh sáng tự nhiên, là không gian lý tưởng để sinh hoạt gia đình và tiếp đón khách.</p>
-        </div>
-
-        <div id="contentMap" class="tab-content d-none">
-          <div class="mb-4">
-            <h3>Bản đồ xem trước</h3>
-            <a
-              href="#"
-              id="mapLink"
-              target="_blank"
-              class="d-block w-100"
-            >
-              <iframe id="mapFrame" width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.294156689628!2d106.69745581471815!3d10.79155949231644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4a434d2b27%3A0x88f2c3b2d1c9f3d!2sVinhomes%20Central%20Park!5e0!3m2!1svi!2svn!4v1626245100000!5m2!1svi!2svn"
-                href="https://www.google.com/maps/search/?api=1&query=Vinhomes%20Central%20Park%2C%20B%C3%ACnh%20Th%E1%BA%A1nh"
-                ;></iframe>
+  
+          <div id="contentOverview" class="tab-content">
+            <p id="detailDescription" class="text-secondary lh-lg mb-4">Ngôi nhà có đường ô tô tránh nhau và xe tải 3 tấn đi lại dễ dàng, nổi bật với sân rộng rãi, an toàn ngay cạnh phòng khách lớn để để xe máy thoải mái, cùng với phòng khách thiết kế mở, tràn ngập ánh sáng tự nhiên, là không gian lý tưởng để sinh hoạt gia đình và tiếp đón khách.</p>
+          </div>
+  
+          <div id="contentMap" class="tab-content d-none">
+            <div class="mb-4">
+              <h3>Bản đồ xem trước</h3>
+              <a
+                href="#"
+                id="mapLink"
+                target="_blank"
+                class="d-block w-100"
+              >
+                <iframe id="mapFrame" width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.294156689628!2d106.69745581471815!3d10.79155949231644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4a434d2b27%3A0x88f2c3b2d1c9f3d!2sVinhomes%20Central%20Park!5e0!3m2!1svi!2svn!4v1626245100000!5m2!1svi!2svn"
+                  href="https://www.google.com/maps/search/?api=1&query=Vinhomes%20Central%20Park%2C%20B%C3%ACnh%20Th%E1%BA%A1nh"
+                  ;></iframe>
+              </a>
+            </div>
+          </div>
+  
+          <div id="contentReview" class="tab-content d-none">
+            <div class="mb-4 p-3 bg-light rounded text-center text-muted">
+              Hiện tại chưa có bình luận nào.
+            </div>
+          </div>
+  
+          <!-- Bình luận -->
+          <div id="contentComment" class="tab-content d-none">
+            <h2 class="section-title__comment mb-3">Bình luận</h2>
+            <form class="comment-form">
+              <div class="mb-3">
+                <textarea
+                  rows="4"
+                  placeholder="Mời bạn tham gia thảo luận, vui lòng nhập tiếng Việt có dấu"
+                  class="form-control"
+                ></textarea>
+              </div>
+  
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    id="anh"
+                    name="gender"
+                    class="form-check-input"
+                    checked
+                  />
+                  <label for="anh" class="form-check-label">Anh</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    id="chi"
+                    name="gender"
+                    class="form-check-input"
+                  />
+                  <label for="chi" class="form-check-label">Chị</label>
+                </div>
+              </div>
+  
+              <div class="row g-3 mb-3">
+                <div class="col-md">
+                  <input
+                    type="text"
+                    placeholder="Tên và họ (*)"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md">
+                  <input
+                    type="email"
+                    placeholder="Email của bạn"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md">
+                  <input
+                    type="tel"
+                    placeholder="Số điện thoại"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+  
+              <button type="submit" class="btn-submit">
+                Gửi
+              </button>
+            </form>
+          </div>
+          <div class="d-flex justify-content-center m-3 mb-3">
+            <a onclick="toggleConsultModal(true)"
+              class="btn fw-semibold d-flex align-items-center justify-content-center text-white w-50"
+              style=" background: linear-gradient(to right, #10b981, #059669); border-radius: 8px; padding: 10px 12px; font-weight: bold;">
+              Yêu cầu tư vấn
             </a>
           </div>
-        </div>
+      </div>
 
-        <div id="contentReview" class="tab-content d-none">
-          <div class="mb-4 p-3 bg-light rounded text-center text-muted">
-            Hiện tại chưa có bình luận nào.
-          </div>
-        </div>
-
-        <!-- Bình luận -->
-        <div id="contentComment" class="tab-content d-none">
-          <h2 class="section-title__comment mb-3">Bình luận</h2>
-          <form class="comment-form">
-            <div class="mb-3">
-              <textarea
-                rows="4"
-                placeholder="Mời bạn tham gia thảo luận, vui lòng nhập tiếng Việt có dấu"
-                class="form-control"
-              ></textarea>
-            </div>
-
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="form-check form-check-inline">
-                <input
-                  type="radio"
-                  id="anh"
-                  name="gender"
-                  class="form-check-input"
-                  checked
-                />
-                <label for="anh" class="form-check-label">Anh</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  type="radio"
-                  id="chi"
-                  name="gender"
-                  class="form-check-input"
-                />
-                <label for="chi" class="form-check-label">Chị</label>
-              </div>
-            </div>
-
-            <div class="row g-3 mb-3">
-              <div class="col-md">
-                <input
-                  type="text"
-                  placeholder="Tên và họ (*)"
-                  class="form-control"
-                />
-              </div>
-              <div class="col-md">
-                <input
-                  type="email"
-                  placeholder="Email của bạn"
-                  class="form-control"
-                />
-              </div>
-              <div class="col-md">
-                <input
-                  type="tel"
-                  placeholder="Số điện thoại"
-                  class="form-control"
-                />
-              </div>
-            </div>
-
-            <button type="submit" class="btn-submit">
-              Gửi
-            </button>
-          </form>
-        </div>
-        <div class="d-flex justify-content-center m-3 mb-3">
-          <a onclick="toggleConsultModal(true)"
-            class="btn fw-semibold d-flex align-items-center justify-content-center text-white"
-            style=" background: linear-gradient(to right, #10b981, #059669); width: 50%; border-radius: 8px; padding: 10px 12px; font-weight: bold;">
-            Yêu cầu tư vấn
-          </a>
-        </div>
-
+      <div class="rounded shadow-sm bg-white p-4 p-md-5" style="margin-top: 36px;">
         <h2 class="section-title mb-4">Tin cùng chuyên mục</h2>
         <div class="related-scroll-container" style="position: relative;">
           <!-- Nút trái -->
@@ -847,7 +849,7 @@
                   <div class="related-post-image-wrap">
                     <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
                   </div>
-
+      
                   <div class="post-content">
                     <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
                     <p class="post-description">
@@ -855,27 +857,27 @@
                       không
                       gian sống tiện nghi, thoải mái và hiện đại.
                     </p>
-
+      
                     <div class="post-info">
                       <span class="post-price">3.5 tỷ</span>
                       <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
                       <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
                     </div>
-
+      
                     <div class="post-location">
                       <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
                       <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
                     </div>
                   </div>
-
+      
                   <div class="post-contact">
                     <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
-
+      
                     <button class="contact-btn call-btn"
                       onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
                       <i class="fa-solid fa-phone"></i> 0912345678
                     </button>
-
+      
                     <button class="contact-btn consult-btn"
                       onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
                       <i class="fa fa-envelope"></i> Yêu cầu tư vấn
@@ -883,14 +885,14 @@
                   </div>
                 </div>
               </div>
-
+      
               <!-- 2 -->
               <div class="col-md-6 col-sm-6">
                 <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                   <div class="related-post-image-wrap">
                     <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
                   </div>
-
+      
                   <div class="post-content">
                     <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
                     <p class="post-description">
@@ -898,27 +900,27 @@
                       không
                       gian sống tiện nghi, thoải mái và hiện đại.
                     </p>
-
+      
                     <div class="post-info">
                       <span class="post-price">3.5 tỷ</span>
                       <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
                       <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
                     </div>
-
+      
                     <div class="post-location">
                       <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
                       <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
                     </div>
                   </div>
-
+      
                   <div class="post-contact">
                     <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
-
+      
                     <button class="contact-btn call-btn"
                       onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
                       <i class="fa-solid fa-phone"></i> 0912345678
                     </button>
-
+      
                     <button class="contact-btn consult-btn"
                       onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
                       <i class="fa fa-envelope"></i> Yêu cầu tư vấn
@@ -932,7 +934,7 @@
                   <div class="related-post-image-wrap">
                     <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
                   </div>
-
+      
                   <div class="post-content">
                     <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
                     <p class="post-description">
@@ -940,27 +942,27 @@
                       không
                       gian sống tiện nghi, thoải mái và hiện đại.
                     </p>
-
+      
                     <div class="post-info">
                       <span class="post-price">3.5 tỷ</span>
                       <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
                       <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
                     </div>
-
+      
                     <div class="post-location">
                       <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
                       <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
                     </div>
                   </div>
-
+      
                   <div class="post-contact">
                     <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
-
+      
                     <button class="contact-btn call-btn"
                       onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
                       <i class="fa-solid fa-phone"></i> 0912345678
                     </button>
-
+      
                     <button class="contact-btn consult-btn"
                       onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
                       <i class="fa fa-envelope"></i> Yêu cầu tư vấn
@@ -968,14 +970,14 @@
                   </div>
                 </div>
               </div>
-
+      
               <!-- 4 -->
               <div class="col-md-6 col-sm-6">
                 <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                   <div class="related-post-image-wrap">
                     <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
                   </div>
-
+      
                   <div class="post-content">
                     <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
                     <p class="post-description">
@@ -983,27 +985,195 @@
                       không
                       gian sống tiện nghi, thoải mái và hiện đại.
                     </p>
-
+      
                     <div class="post-info">
                       <span class="post-price">3.5 tỷ</span>
                       <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
                       <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
                     </div>
-
+      
                     <div class="post-location">
                       <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
                       <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
                     </div>
                   </div>
-
+      
                   <div class="post-contact">
                     <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
-
+      
                     <button class="contact-btn call-btn"
                       onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
                       <i class="fa-solid fa-phone"></i> 0912345678
                     </button>
-
+      
+                    <button class="contact-btn consult-btn"
+                      onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
+                      <i class="fa fa-envelope"></i> Yêu cầu tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col-md-6 col-sm-6">
+                <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
+                  <div class="related-post-image-wrap">
+                    <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
+                  </div>
+      
+                  <div class="post-content">
+                    <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
+                    <p class="post-description">
+                      Căn hộ gồm 2 phòng ngủ, 2 toilet, có ban công thoáng đãng và được trang bị đầy đủ tiện nghi, mang đến
+                      không
+                      gian sống tiện nghi, thoải mái và hiện đại.
+                    </p>
+      
+                    <div class="post-info">
+                      <span class="post-price">3.5 tỷ</span>
+                      <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
+                      <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
+                    </div>
+      
+                    <div class="post-location">
+                      <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
+                      <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
+                    </div>
+                  </div>
+      
+                  <div class="post-contact">
+                    <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
+      
+                    <button class="contact-btn call-btn"
+                      onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
+                      <i class="fa-solid fa-phone"></i> 0912345678
+                    </button>
+      
+                    <button class="contact-btn consult-btn"
+                      onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
+                      <i class="fa fa-envelope"></i> Yêu cầu tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col-md-6 col-sm-6">
+                <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
+                  <div class="related-post-image-wrap">
+                    <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
+                  </div>
+      
+                  <div class="post-content">
+                    <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
+                    <p class="post-description">
+                      Căn hộ gồm 2 phòng ngủ, 2 toilet, có ban công thoáng đãng và được trang bị đầy đủ tiện nghi, mang đến
+                      không
+                      gian sống tiện nghi, thoải mái và hiện đại.
+                    </p>
+      
+                    <div class="post-info">
+                      <span class="post-price">3.5 tỷ</span>
+                      <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
+                      <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
+                    </div>
+      
+                    <div class="post-location">
+                      <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
+                      <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
+                    </div>
+                  </div>
+      
+                  <div class="post-contact">
+                    <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
+      
+                    <button class="contact-btn call-btn"
+                      onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
+                      <i class="fa-solid fa-phone"></i> 0912345678
+                    </button>
+      
+                    <button class="contact-btn consult-btn"
+                      onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
+                      <i class="fa fa-envelope"></i> Yêu cầu tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col-md-6 col-sm-6">
+                <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
+                  <div class="related-post-image-wrap">
+                    <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
+                  </div>
+      
+                  <div class="post-content">
+                    <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
+                    <p class="post-description">
+                      Căn hộ gồm 2 phòng ngủ, 2 toilet, có ban công thoáng đãng và được trang bị đầy đủ tiện nghi, mang đến
+                      không
+                      gian sống tiện nghi, thoải mái và hiện đại.
+                    </p>
+      
+                    <div class="post-info">
+                      <span class="post-price">3.5 tỷ</span>
+                      <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
+                      <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
+                    </div>
+      
+                    <div class="post-location">
+                      <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
+                      <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
+                    </div>
+                  </div>
+      
+                  <div class="post-contact">
+                    <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
+      
+                    <button class="contact-btn call-btn"
+                      onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
+                      <i class="fa-solid fa-phone"></i> 0912345678
+                    </button>
+      
+                    <button class="contact-btn consult-btn"
+                      onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
+                      <i class="fa fa-envelope"></i> Yêu cầu tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col-md-6 col-sm-6">
+                <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
+                  <div class="related-post-image-wrap">
+                    <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
+                  </div>
+      
+                  <div class="post-content">
+                    <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
+                    <p class="post-description">
+                      Căn hộ gồm 2 phòng ngủ, 2 toilet, có ban công thoáng đãng và được trang bị đầy đủ tiện nghi, mang đến
+                      không
+                      gian sống tiện nghi, thoải mái và hiện đại.
+                    </p>
+      
+                    <div class="post-info">
+                      <span class="post-price">3.5 tỷ</span>
+                      <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
+                      <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
+                    </div>
+      
+                    <div class="post-location">
+                      <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
+                      <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
+                    </div>
+                  </div>
+      
+                  <div class="post-contact">
+                    <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
+      
+                    <button class="contact-btn call-btn"
+                      onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
+                      <i class="fa-solid fa-phone"></i> 0912345678
+                    </button>
+      
                     <button class="contact-btn consult-btn"
                       onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
                       <i class="fa fa-envelope"></i> Yêu cầu tư vấn
@@ -1032,7 +1202,7 @@
                   <div class="related-post-image-wrap">
                     <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
                   </div>
-
+      
                   <div class="post-content">
                     <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
                     <p class="post-description">
@@ -1040,27 +1210,27 @@
                       không
                       gian sống tiện nghi, thoải mái và hiện đại.
                     </p>
-
+      
                     <div class="post-info">
                       <span class="post-price">3.5 tỷ</span>
                       <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
                       <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
                     </div>
-
+      
                     <div class="post-location">
                       <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
                       <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
                     </div>
                   </div>
-
+      
                   <div class="post-contact">
                     <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
-
+      
                     <button class="contact-btn call-btn"
                       onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
                       <i class="fa-solid fa-phone"></i> 0912345678
                     </button>
-
+      
                     <button class="contact-btn consult-btn"
                       onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
                       <i class="fa fa-envelope"></i> Yêu cầu tư vấn
@@ -1074,7 +1244,7 @@
                   <div class="related-post-image-wrap">
                     <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
                   </div>
-
+      
                   <div class="post-content">
                     <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
                     <p class="post-description">
@@ -1082,27 +1252,27 @@
                       không
                       gian sống tiện nghi, thoải mái và hiện đại.
                     </p>
-
+      
                     <div class="post-info">
                       <span class="post-price">3.5 tỷ</span>
                       <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
                       <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
                     </div>
-
+      
                     <div class="post-location">
                       <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
                       <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
                     </div>
                   </div>
-
+      
                   <div class="post-contact">
                     <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
-
+      
                     <button class="contact-btn call-btn"
                       onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
                       <i class="fa-solid fa-phone"></i> 0912345678
                     </button>
-
+      
                     <button class="contact-btn consult-btn"
                       onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
                       <i class="fa fa-envelope"></i> Yêu cầu tư vấn
@@ -1116,7 +1286,7 @@
                   <div class="related-post-image-wrap">
                     <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
                   </div>
-
+      
                   <div class="post-content">
                     <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
                     <p class="post-description">
@@ -1124,27 +1294,27 @@
                       không
                       gian sống tiện nghi, thoải mái và hiện đại.
                     </p>
-
+      
                     <div class="post-info">
                       <span class="post-price">3.5 tỷ</span>
                       <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
                       <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
                     </div>
-
+      
                     <div class="post-location">
                       <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
                       <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
                     </div>
                   </div>
-
+      
                   <div class="post-contact">
                     <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
-
+      
                     <button class="contact-btn call-btn"
                       onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
                       <i class="fa-solid fa-phone"></i> 0912345678
                     </button>
-
+      
                     <button class="contact-btn consult-btn"
                       onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
                       <i class="fa fa-envelope"></i> Yêu cầu tư vấn
@@ -1158,7 +1328,7 @@
                   <div class="related-post-image-wrap">
                     <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
                   </div>
-
+      
                   <div class="post-content">
                     <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
                     <p class="post-description">
@@ -1166,27 +1336,195 @@
                       không
                       gian sống tiện nghi, thoải mái và hiện đại.
                     </p>
-
+      
                     <div class="post-info">
                       <span class="post-price">3.5 tỷ</span>
                       <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
                       <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
                     </div>
-
+      
                     <div class="post-location">
                       <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
                       <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
                     </div>
                   </div>
-
+      
                   <div class="post-contact">
                     <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
-
+      
                     <button class="contact-btn call-btn"
                       onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
                       <i class="fa-solid fa-phone"></i> 0912345678
                     </button>
-
+      
+                    <button class="contact-btn consult-btn"
+                      onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
+                      <i class="fa fa-envelope"></i> Yêu cầu tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col-md-6 col-sm-6">
+                <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
+                  <div class="related-post-image-wrap">
+                    <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
+                  </div>
+      
+                  <div class="post-content">
+                    <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
+                    <p class="post-description">
+                      Căn hộ gồm 2 phòng ngủ, 2 toilet, có ban công thoáng đãng và được trang bị đầy đủ tiện nghi, mang đến
+                      không
+                      gian sống tiện nghi, thoải mái và hiện đại.
+                    </p>
+      
+                    <div class="post-info">
+                      <span class="post-price">3.5 tỷ</span>
+                      <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
+                      <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
+                    </div>
+      
+                    <div class="post-location">
+                      <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
+                      <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
+                    </div>
+                  </div>
+      
+                  <div class="post-contact">
+                    <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
+      
+                    <button class="contact-btn call-btn"
+                      onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
+                      <i class="fa-solid fa-phone"></i> 0912345678
+                    </button>
+      
+                    <button class="contact-btn consult-btn"
+                      onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
+                      <i class="fa fa-envelope"></i> Yêu cầu tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col-md-6 col-sm-6">
+                <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
+                  <div class="related-post-image-wrap">
+                    <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
+                  </div>
+      
+                  <div class="post-content">
+                    <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
+                    <p class="post-description">
+                      Căn hộ gồm 2 phòng ngủ, 2 toilet, có ban công thoáng đãng và được trang bị đầy đủ tiện nghi, mang đến
+                      không
+                      gian sống tiện nghi, thoải mái và hiện đại.
+                    </p>
+      
+                    <div class="post-info">
+                      <span class="post-price">3.5 tỷ</span>
+                      <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
+                      <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
+                    </div>
+      
+                    <div class="post-location">
+                      <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
+                      <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
+                    </div>
+                  </div>
+      
+                  <div class="post-contact">
+                    <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
+      
+                    <button class="contact-btn call-btn"
+                      onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
+                      <i class="fa-solid fa-phone"></i> 0912345678
+                    </button>
+      
+                    <button class="contact-btn consult-btn"
+                      onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
+                      <i class="fa fa-envelope"></i> Yêu cầu tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col-md-6 col-sm-6">
+                <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
+                  <div class="related-post-image-wrap">
+                    <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
+                  </div>
+      
+                  <div class="post-content">
+                    <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
+                    <p class="post-description">
+                      Căn hộ gồm 2 phòng ngủ, 2 toilet, có ban công thoáng đãng và được trang bị đầy đủ tiện nghi, mang đến
+                      không
+                      gian sống tiện nghi, thoải mái và hiện đại.
+                    </p>
+      
+                    <div class="post-info">
+                      <span class="post-price">3.5 tỷ</span>
+                      <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
+                      <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
+                    </div>
+      
+                    <div class="post-location">
+                      <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
+                      <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
+                    </div>
+                  </div>
+      
+                  <div class="post-contact">
+                    <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
+      
+                    <button class="contact-btn call-btn"
+                      onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
+                      <i class="fa-solid fa-phone"></i> 0912345678
+                    </button>
+      
+                    <button class="contact-btn consult-btn"
+                      onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
+                      <i class="fa fa-envelope"></i> Yêu cầu tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col-md-6 col-sm-6">
+                <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
+                  <div class="related-post-image-wrap">
+                    <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính" class="related-post-image img-fluid" />
+                  </div>
+      
+                  <div class="post-content">
+                    <h2 class="post-title">Căn hộ chung cư cao cấp, view đẹp, gần trung tâm</h2>
+                    <p class="post-description">
+                      Căn hộ gồm 2 phòng ngủ, 2 toilet, có ban công thoáng đãng và được trang bị đầy đủ tiện nghi, mang đến
+                      không
+                      gian sống tiện nghi, thoải mái và hiện đại.
+                    </p>
+      
+                    <div class="post-info">
+                      <span class="post-price">3.5 tỷ</span>
+                      <span class="post-area"><i class="fa-solid fa-ruler-combined"></i> 72 m²</span>
+                      <span class="post-type"><i class="fa-solid fa-house"></i> Bán nhà</span>
+                    </div>
+      
+                    <div class="post-location">
+                      <div class="old-location"><i class="fa-solid fa-location-dot"></i> Quận 1, TP.HCM</div>
+                      <div><i class="fa-solid fa-map-location-dot"></i> Vinhomes Central Park, Bình Thạnh</div>
+                    </div>
+                  </div>
+      
+                  <div class="post-contact">
+                    <img src="./public/assets/images/BDS/item2/profile.png" alt="Tác giả" class="contact-avatar" />
+      
+                    <button class="contact-btn call-btn"
+                      onclick="event.stopPropagation(); window.location.href='tel:0912345678'">
+                      <i class="fa-solid fa-phone"></i> 0912345678
+                    </button>
+      
                     <button class="contact-btn consult-btn"
                       onclick="event.stopPropagation(); window.location.href='https://zalo.me/0912345678'">
                       <i class="fa fa-envelope"></i> Yêu cầu tư vấn
@@ -1200,9 +1538,11 @@
             <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
-        </div>
+      </div>
+      
+      </div>
     <!-- sidebar -->
-  <div id="sidebar" class="sidebar">
+  <div id="sidebar" class="sidebar" style="max-width: 20rem;">
   <div class="bg-white p-4 rounded shadow-sm">
     <!-- Ảnh đại diện -->
     <div class="d-flex flex-column align-items-center mb-4">
@@ -1322,7 +1662,7 @@
 </div>
 
        <!-- DANNH MỤC -->
-<div class="bg-white p-4 rounded shadow-sm mb-4 category-box">
+<div class="bg-white p-4 rounded shadow-sm category-box">
   <h2 class="fs-5 fw-semibold text-dark mb-3">Danh mục</h2>
   <ul class="list-unstyled mb-0 d-flex flex-column gap-2 fs-6">
     <li><a href="#" class="category-link">Căn hộ chung cư</a></li>
@@ -1474,7 +1814,7 @@
       </div>
 
       <!-- BÊN TRÁI: ITEM + padding -->
-      <div class="col-12 col-md-6">
+      <div class="col-6 d-none d-md-block">
         <div style="padding: 20px;">
           <div class="re-card card border-0 shadow-sm overflow-hidden h-100">
             <div class="position-relativ re-img-wrap p-3">
@@ -1513,7 +1853,7 @@
       </div>
 
       <!-- BÊN PHẢI: FORM + padding + giữ nguyên layout -->
-      <div class="col-12 col-md-6">
+      <div class="col-md-6 col-12 ">
         <div style="padding: 20px;">
           
           <form id="form-contact-modal" action="https://we1.io.vn/lien-he/gui" method="post" class="contact-form">
@@ -1928,59 +2268,108 @@
       });
     </script>
     <script>
-      const scrollContainer = document.querySelector('.related-scroll-wrapper');
-      const scrollStep = 350;
-      const scrollInterval = 3000;
-      let scrollAmount = 0;
+      const initHorizontalScroller = ({
+        wrapperSelector,
+        itemSelector,
+        prevBtnId,
+        nextBtnId,
+        autoInterval = 0,
+      }) => {
+        const container = document.querySelector(wrapperSelector);
+        if (!container) return;
 
-      // Cuộn tự động
-      setInterval(() => {
-        if (!scrollContainer) return;
-        const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-        scrollAmount += scrollStep;
-        if (scrollAmount >= maxScroll) scrollAmount = 0;
+        const items = container.querySelectorAll(itemSelector);
+        if (!items.length) return;
 
-        scrollContainer.scrollTo({
-          left: scrollAmount,
-          behavior: 'smooth',
+        let currentIndex = 0;
+        let baseOffset = items[0].offsetLeft;
+        let autoTimer = null;
+
+        const getTargetOffset = (index) => items[index].offsetLeft - baseOffset;
+
+        const normalizeIndex = (index) => {
+          const count = items.length;
+          return ((index % count) + count) % count;
+        };
+
+        const scrollToIndex = (index) => {
+          const normalizedIndex = normalizeIndex(index);
+          currentIndex = normalizedIndex;
+          container.scrollTo({
+            left: getTargetOffset(normalizedIndex),
+            behavior: 'smooth',
+          });
+        };
+
+        const syncIndexOnScroll = () => {
+          const scrollLeft = container.scrollLeft;
+          let closestIdx = currentIndex;
+          let minDiff = Infinity;
+
+          items.forEach((item, index) => {
+            const diff = Math.abs(scrollLeft - getTargetOffset(index));
+            if (diff < minDiff) {
+              minDiff = diff;
+              closestIdx = index;
+            }
+          });
+
+          currentIndex = closestIdx;
+        };
+
+        const updateOffsets = () => {
+          baseOffset = items[0].offsetLeft;
+          scrollToIndex(currentIndex);
+        };
+
+        const startAutoScroll = () => {
+          if (!autoInterval) return;
+          stopAutoScroll();
+          autoTimer = setInterval(() => scrollToIndex(currentIndex + 1), autoInterval);
+        };
+
+        const stopAutoScroll = () => {
+          if (!autoTimer) return;
+          clearInterval(autoTimer);
+          autoTimer = null;
+        };
+
+        document.getElementById(prevBtnId)?.addEventListener('click', () => {
+          scrollToIndex(currentIndex - 1);
         });
-      }, scrollInterval);
 
-      // Nút bấm cuộn tay
-      document.getElementById('scrollLeftBtn').addEventListener('click', () => {
-        scrollContainer.scrollBy({ left: -scrollStep, behavior: 'smooth' });
-      });
-
-      document.getElementById('scrollRightBtn').addEventListener('click', () => {
-        scrollContainer.scrollBy({ left: scrollStep, behavior: 'smooth' });
-      });
-    </script>
-    <script>
-      const lastestScrollContainer = document.querySelector('.lastest-scroll-wrapper');
-      let lastestScrollAmount = 0;
-      const lastestScrollStep = 350; // khoảng cuộn mỗi lần
-      const lastestScrollInterval = 3000; // 3s
-
-      // Cuộn tự động
-      setInterval(() => {
-        if (!lastestScrollContainer) return;
-        const maxScroll = lastestScrollContainer.scrollWidth - lastestScrollContainer.clientWidth;
-        lastestScrollAmount += scrollStep;
-        if (lastestScrollAmount >= maxScroll) lastestScrollAmount = 0;
-
-        lastestScrollContainer.scrollTo({
-          left: lastestScrollAmount,
-          behavior: 'smooth',
+        document.getElementById(nextBtnId)?.addEventListener('click', () => {
+          scrollToIndex(currentIndex + 1);
         });
-      }, lastestScrollInterval);
 
-      // Nút bấm cuộn tay
-      document.getElementById('lastScrollLeftBtn').addEventListener('click', () => {
-        lastestScrollContainer.scrollBy({ left: -lastestScrollStep, behavior: 'smooth' });
-      });
+        container.addEventListener('scroll', syncIndexOnScroll);
+        window.addEventListener('resize', updateOffsets);
 
-      document.getElementById('lastScrollRightBtn').addEventListener('click', () => {
-        lastestScrollContainer.scrollBy({ left: lastestScrollStep, behavior: 'smooth' });
+        if (autoInterval) {
+          container.addEventListener('mouseenter', stopAutoScroll);
+          container.addEventListener('mouseleave', startAutoScroll);
+          startAutoScroll();
+        }
+
+        scrollToIndex(0);
+      };
+
+      document.addEventListener('DOMContentLoaded', () => {
+        initHorizontalScroller({
+          wrapperSelector: '.related-scroll-wrapper',
+          itemSelector: '#relatedPosts > .col-md-6',
+          prevBtnId: 'scrollLeftBtn',
+          nextBtnId: 'scrollRightBtn',
+          autoInterval: 4000,
+        });
+
+        initHorizontalScroller({
+          wrapperSelector: '.lastest-scroll-wrapper',
+          itemSelector: '#latestPosts > .col-md-6',
+          prevBtnId: 'lastScrollLeftBtn',
+          nextBtnId: 'lastScrollRightBtn',
+          autoInterval: 4000,
+        });
       });
     </script>
    <script>

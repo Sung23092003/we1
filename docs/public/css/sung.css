@@ -1064,6 +1064,9 @@
   scroll-behavior: smooth;
   white-space: nowrap;
   padding-bottom: 10px;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 10px;
 }
 
 .related-scroll-wrapper::-webkit-scrollbar {
@@ -1115,6 +1118,9 @@
   scroll-behavior: smooth;
   white-space: nowrap;
   padding-bottom: 10px;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 10px;
 }
 
 .lastest-scroll-wrapper::-webkit-scrollbar {
@@ -1138,6 +1144,8 @@
 #relatedPosts .col-md-6 {
   flex: 0 0 48%;
   min-width: 300px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 #latestPosts {
@@ -1149,6 +1157,8 @@
 #latestPosts .col-md-6 {
   flex: 0 0 48%;
   min-width: 300px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .related-post-card {
@@ -1916,7 +1926,6 @@
 /* Sidebar chung */
 #sidebar {
   background: transparent;
-  max-width: 20rem;
   margin-left: 2%;
   padding: 0;
   display: flex;
