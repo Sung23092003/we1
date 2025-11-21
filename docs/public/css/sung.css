@@ -1061,7 +1061,6 @@
 /* Thanh cuộn */
 .related-scroll-wrapper {
   overflow-x: auto;
-  scroll-behavior: smooth;
   white-space: nowrap;
   padding-bottom: 10px;
   scrollbar-width: none;
@@ -1115,7 +1114,6 @@
 
 .lastest-scroll-wrapper {
   overflow-x: auto;
-  scroll-behavior: smooth;
   white-space: nowrap;
   padding-bottom: 10px;
   scrollbar-width: none;
@@ -1419,6 +1417,8 @@
 .post-title {
   font-size: 1.1rem;
   font-weight: 600;
+  text-wrap: wrap;
+  text-align: center;
   color: #111827;
   margin-bottom: 8px;
 }

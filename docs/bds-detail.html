@@ -643,6 +643,14 @@
 <div id="sidebarOverlay"></div>
 
 <div class="container-xl" style="margin-top: 40px; margin-bottom: 40px;">
+  <div class="col-md-12" style="margin-bottom: 16px;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Bán nhà đường ô tô tránh nhau, xe tải 3 tấn đi thoải mái</li>
+      </ol>
+    </nav>
+  </div>
   <div class="row g-4 flex-lg-nowrap">
     <!-- Main Content -->
     <div id="mainContent" class="col">
@@ -2270,7 +2278,6 @@
     <script>
       const initHorizontalScroller = ({
         wrapperSelector,
-        itemSelector,
         prevBtnId,
         nextBtnId,
         autoInterval = 0,
@@ -2278,86 +2285,138 @@
         const container = document.querySelector(wrapperSelector);
         if (!container) return;
 
-        const items = container.querySelectorAll(itemSelector);
-        if (!items.length) return;
+        const scrollTrack = container.querySelector('.row') || container.firstElementChild;
+        if (!scrollTrack) return;
 
-        let currentIndex = 0;
-        let baseOffset = items[0].offsetLeft;
+        // --- 1. NHÂN ĐÔI ITEM ---
+        const itemsHTML = scrollTrack.innerHTML;
+        scrollTrack.innerHTML = itemsHTML + itemsHTML;
+
         let autoTimer = null;
+        let isAnimating = false; // <--- BIẾN QUAN TRỌNG: Chặn xung đột
 
-        const getTargetOffset = (index) => items[index].offsetLeft - baseOffset;
-
-        const normalizeIndex = (index) => {
-          const count = items.length;
-          return ((index % count) + count) % count;
+        // Hàm lấy chiều rộng chuẩn
+        const getItemWidth = () => {
+          const item = scrollTrack.firstElementChild;
+          if (!item) return 0;
+          const style = window.getComputedStyle(scrollTrack);
+          const gap = parseFloat(style.columnGap) || parseFloat(style.gap) || 0;
+          return item.offsetWidth + (gap > 0 ? gap : 24);
         };
 
-        const scrollToIndex = (index) => {
-          const normalizedIndex = normalizeIndex(index);
-          currentIndex = normalizedIndex;
-          container.scrollTo({
-            left: getTargetOffset(normalizedIndex),
-            behavior: 'smooth',
-          });
+        // --- 2. XỬ LÝ CUỘN VÔ TẬN (SỰ KIỆN SCROLL) ---
+        // Hàm này chỉ dành cho việc VUỐT TAY (Touch/Manual scroll)
+        const handleInfiniteScroll = () => {
+          // Nếu đang chạy hiệu ứng bấm nút thì bỏ qua, không tính toán lại vị trí
+          if (isAnimating) return; 
+
+          const maxScroll = container.scrollWidth / 2;
+          const buffer = 10; 
+
+          if (container.scrollLeft >= maxScroll + buffer) {
+            container.scrollLeft -= maxScroll;
+          } else if (container.scrollLeft <= 0) {
+            container.scrollLeft += maxScroll;
+          }
         };
 
-        const syncIndexOnScroll = () => {
-          const scrollLeft = container.scrollLeft;
-          let closestIdx = currentIndex;
-          let minDiff = Infinity;
+        container.addEventListener('scroll', handleInfiniteScroll);
 
-          items.forEach((item, index) => {
-            const diff = Math.abs(scrollLeft - getTargetOffset(index));
-            if (diff < minDiff) {
-              minDiff = diff;
-              closestIdx = index;
+        // --- 3. XỬ LÝ NÚT BẤM (LOGIC ĐÃ FIX) ---
+        const scrollMove = (direction) => {
+          // Bật cờ đang chạy animation để chặn sự kiện scroll can thiệp
+          isAnimating = true;
+
+          const itemWidth = getItemWidth();
+          const maxScroll = container.scrollWidth / 2;
+
+          // --- LOGIC NHẢY CÓC (TELEPORT) TRƯỚC KHI TRƯỢT ---
+          // Trước khi trượt, kiểm tra xem có cần reset vị trí về vùng an toàn không
+          // Để đảm bảo luôn có "đường băng" cho hiệu ứng smooth chạy
+          
+          if (direction === 1) { // Next
+            // Nếu đang ở phần bản sao (nửa sau), hãy nhảy về phần bản gốc (nửa đầu) ngay lập tức
+            // >= maxScroll - 5 nghĩa là đang ở vị trí bắt đầu của vòng lặp mới hoặc sâu hơn
+            if (container.scrollLeft >= maxScroll - 10) {
+              container.scrollLeft -= maxScroll;
             }
+          } else if (direction === -1) { // Prev
+            // Nếu đang ở đầu, nhảy xuống giữa ngay
+            if (container.scrollLeft <= 10) {
+              container.scrollLeft += maxScroll;
+            }
+          }
+
+          // Sau khi đã teleport về vùng an toàn, mới bắt đầu trượt
+          container.scrollBy({
+            left: direction * itemWidth,
+            behavior: 'smooth'
           });
 
-          currentIndex = closestIdx;
+          // Tắt cờ animation sau khi hiệu ứng kết thúc (khoảng 500-600ms)
+          setTimeout(() => {
+            isAnimating = false;
+            
+            // Kiểm tra lại lần cuối sau khi trượt xong để đảm bảo vị trí đúng
+            // (Phòng trường hợp trượt xong lại rơi đúng vào điểm gãy)
+            const currentScroll = container.scrollLeft;
+            if (currentScroll >= maxScroll) {
+                container.scrollLeft = currentScroll - maxScroll;
+            }
+          }, 600); 
         };
 
-        const updateOffsets = () => {
-          baseOffset = items[0].offsetLeft;
-          scrollToIndex(currentIndex);
-        };
+        // --- GÁN SỰ KIỆN CLICK ---
+        const btnPrev = document.getElementById(prevBtnId);
+        const btnNext = document.getElementById(nextBtnId);
 
+        if (btnPrev) {
+          btnPrev.onclick = (e) => {
+            e.preventDefault();
+            stopAutoScroll();
+            scrollMove(-1);
+          };
+        }
+
+        if (btnNext) {
+          btnNext.onclick = (e) => {
+            e.preventDefault();
+            stopAutoScroll();
+            scrollMove(1);
+          };
+        }
+
+        // --- 4. AUTO SCROLL ---
         const startAutoScroll = () => {
           if (!autoInterval) return;
           stopAutoScroll();
-          autoTimer = setInterval(() => scrollToIndex(currentIndex + 1), autoInterval);
+          autoTimer = setInterval(() => {
+            if (!container.matches(':hover')) {
+              scrollMove(1);
+            }
+          }, autoInterval);
         };
 
         const stopAutoScroll = () => {
-          if (!autoTimer) return;
-          clearInterval(autoTimer);
-          autoTimer = null;
+          if (autoTimer) {
+            clearInterval(autoTimer);
+            autoTimer = null;
+          }
         };
-
-        document.getElementById(prevBtnId)?.addEventListener('click', () => {
-          scrollToIndex(currentIndex - 1);
-        });
-
-        document.getElementById(nextBtnId)?.addEventListener('click', () => {
-          scrollToIndex(currentIndex + 1);
-        });
-
-        container.addEventListener('scroll', syncIndexOnScroll);
-        window.addEventListener('resize', updateOffsets);
 
         if (autoInterval) {
           container.addEventListener('mouseenter', stopAutoScroll);
           container.addEventListener('mouseleave', startAutoScroll);
+          container.addEventListener('touchstart', stopAutoScroll);
+          container.addEventListener('touchend', startAutoScroll);
           startAutoScroll();
         }
-
-        scrollToIndex(0);
       };
 
       document.addEventListener('DOMContentLoaded', () => {
+        // Khởi tạo các slider
         initHorizontalScroller({
           wrapperSelector: '.related-scroll-wrapper',
-          itemSelector: '#relatedPosts > .col-md-6',
           prevBtnId: 'scrollLeftBtn',
           nextBtnId: 'scrollRightBtn',
           autoInterval: 4000,
@@ -2365,7 +2424,6 @@
 
         initHorizontalScroller({
           wrapperSelector: '.lastest-scroll-wrapper',
-          itemSelector: '#latestPosts > .col-md-6',
           prevBtnId: 'lastScrollLeftBtn',
           nextBtnId: 'lastScrollRightBtn',
           autoInterval: 4000,
