@@ -2730,12 +2730,15 @@
           startAuto();
         }
 
+        // khi người dùng scroll trực tiếp
         viewport.addEventListener('scroll', throttle(handleInfiniteOnScroll, 80));
 
+        // cập nhật khi kích thước thay đổi
         window.addEventListener('resize', debounce(() => {
           checkOverflow();
         }, 150));
 
+        // MutationObserver: nếu nội dung track thay đổi (ví dụ add/remove card)
         const mo = new MutationObserver(() => {
           // nếu chưa duplicate thì duplicate
           if (!container.dataset.duplicated) {
