@@ -1,3 +1,6 @@
+.no-snap {
+  scroll-snap-type: none !important;
+}
 /* header */
 .fe-header .box-icon .icon {
   border-radius: 50%;
