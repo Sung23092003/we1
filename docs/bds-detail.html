@@ -1023,15 +1023,15 @@
 
           <div class="rounded shadow-sm bg-white p-4 p-md-5" style="margin-top: 36px;">
             <h2 class="section-title mb-4">Tin cùng chuyên mục</h2>
-            <div class="related-scroll-container" style="position: relative;">
+            <div class="horizontal-scroll-container" data-auto-interval="4000">
               <!-- Nút trái -->
-              <button class="scroll-btn left" id="scrollLeftBtn">
+              <button class="scroll-btn left" data-prev>
                 <i class="fa-solid fa-chevron-left"></i>
               </button>
-              <div class="related-scroll-wrapper">
-                <div id="relatedPosts" class="row gy-4 mb-5">
+              <div class="scroll-viewport">
+                <div class="scroll-track" role="list" aria-live="polite">
                   <!-- 1 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1076,7 +1076,7 @@
                   </div>
 
                   <!-- 2 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1120,7 +1120,7 @@
                     </div>
                   </div>
                   <!-- 3 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1165,7 +1165,7 @@
                   </div>
 
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1209,7 +1209,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1253,7 +1253,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1297,7 +1297,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1341,7 +1341,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1387,20 +1387,20 @@
                 </div>
               </div>
               <!-- Nút phải -->
-              <button class="scroll-btn right" id="scrollRightBtn">
+              <button class="scroll-btn right" data-prev>
                 <i class="fa-solid fa-chevron-right"></i>
               </button>
             </div>
             <h2 class="section-title mb-4">Tin mới nhất</h2>
-            <div class="lastest-scroll-container" style="position: relative;">
+            <div class="horizontal-scroll-container" data-auto-interval="4000">
               <!-- Nút trái -->
-              <button class="scroll-btn left" id="lastScrollLeftBtn">
+              <button class="scroll-btn left" data-prev>
                 <i class="fa-solid fa-chevron-left"></i>
               </button>
-              <div class="lastest-scroll-wrapper">
-                <div id="latestPosts" class="row gy-4 mb-5">
+              <div class="scroll-viewport">
+                <div class="scroll-track" role="list" aria-live="polite">
                   <!-- 1 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1444,7 +1444,7 @@
                     </div>
                   </div>
                   <!-- 2 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1488,7 +1488,7 @@
                     </div>
                   </div>
                   <!-- 3 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1532,7 +1532,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1576,7 +1576,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1620,7 +1620,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1664,7 +1664,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1708,7 +1708,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-md-6 col-sm-6">
+                  <div class="item col-md-6 col-sm-6">
                     <div class="related-post-card" onclick="window.location.href='bds-detail.html?id=2'">
                       <div class="related-post-image-wrap">
                         <img src="./public/assets/images/BDS/item2/1.png" alt="Ảnh chính"
@@ -1753,7 +1753,7 @@
                   </div>
                 </div>
               </div>
-              <button class="scroll-btn right" id="lastScrollRightBtn">
+              <button class="scroll-btn right" data-prev>
                 <i class="fa-solid fa-chevron-right"></i>
               </button>
             </div>
@@ -2594,144 +2594,200 @@
     });
   </script>
   <script>
-    const initHorizontalScroller = ({
-      wrapperSelector,
-      prevBtnId,
-      nextBtnId,
-      autoInterval = 0,
-    }) => {
-      const container = document.querySelector(wrapperSelector);
-      if (!container) return;
-
-      const scrollTrack = container.querySelector('.row') || container.firstElementChild;
-      if (!scrollTrack) return;
-
-      // --- NHÂN ĐÔI ITEM ---
-      const itemsHTML = scrollTrack.innerHTML;
-      scrollTrack.innerHTML = itemsHTML + itemsHTML;
-
-      let autoTimer = null;
-      let isAnimating = false;
-
-      // Hàm lấy chiều rộng chuẩn
-      const getItemWidth = () => {
-        const item = scrollTrack.firstElementChild;
-        if (!item) return 0;
-        const style = window.getComputedStyle(scrollTrack);
-        const gap = parseFloat(style.columnGap) || parseFloat(style.gap) || 0;
-        return item.offsetWidth + (gap > 0 ? gap : 24);
+    (function () {
+      const initAll = () => {
+        document.querySelectorAll('.horizontal-scroll-container').forEach(initSlider);
       };
 
-      // --- XỬ LÝ CUỘN VÔ TẬN (SỰ KIỆN SCROLL) ---
-      const handleInfiniteScroll = () => {
-        if (isAnimating) return;
+      function initSlider(container) {
+        const viewport = container.querySelector('.scroll-viewport');
+        const track = container.querySelector('.scroll-track');
+        const btnPrev = container.querySelector('[data-prev]');
+        const btnNext = container.querySelector('[data-next]');
+        const autoMs = parseInt(container.dataset.autoInterval || container.getAttribute('data-auto-interval') || 0, 10) || 0;
 
-        const maxScroll = container.scrollWidth / 2;
-        const buffer = 10;
+        if (!viewport || !track) return;
 
-        if (container.scrollLeft >= maxScroll + buffer) {
-          container.scrollLeft -= maxScroll;
-        } else if (container.scrollLeft <= 0) {
-          container.scrollLeft += maxScroll;
-        }
-      };
-
-      container.addEventListener('scroll', handleInfiniteScroll);
-
-      const scrollMove = (direction) => {
-        if (isAnimating) return;
-        isAnimating = true;
-
-        container.classList.add("no-snap");
-
-        const itemWidth = getItemWidth();
-        const maxScroll = container.scrollWidth / 2;
-
-        if (direction === 1 && container.scrollLeft >= maxScroll - 10) {
-          container.scrollLeft -= maxScroll;
-        } else if (direction === -1 && container.scrollLeft <= 10) {
-          container.scrollLeft += maxScroll;
+        const items = Array.from(track.children);
+        if (items.length > 1 && !container.dataset.duplicated) {
+          track.innerHTML = track.innerHTML + track.innerHTML;
+          container.dataset.duplicated = '1';
         }
 
-        container.scrollBy({
-          left: direction * itemWidth,
-          behavior: 'smooth'
-        });
+        let autoTimer = null;
+        let isAnimating = false;
 
-        setTimeout(() => {
-          isAnimating = false;
-
-          const currentScroll = container.scrollLeft;
-          if (currentScroll >= maxScroll) container.scrollLeft = currentScroll - maxScroll;
-
-          container.classList.remove("no-snap");
-        }, 350);
-      };
-
-      // --- GÁN SỰ KIỆN CLICK ---
-      const btnPrev = document.getElementById(prevBtnId);
-      const btnNext = document.getElementById(nextBtnId);
-
-      if (btnPrev) {
-        btnPrev.onclick = (e) => {
-          e.preventDefault();
-          stopAutoScroll();
-          scrollMove(-1);
+        const getItemWidth = () => {
+          const first = track.querySelector('.item') || track.firstElementChild;
+          if (!first) return Math.max(200, viewport.clientWidth / 3);
+          const style = window.getComputedStyle(track);
+          const gap = parseFloat(style.gap || style.columnGap || 20) || 20;
+          return Math.round(first.getBoundingClientRect().width + gap);
         };
-      }
 
-      if (btnNext) {
-        btnNext.onclick = (e) => {
-          e.preventDefault();
-          stopAutoScroll();
-          scrollMove(1);
-        };
-      }
-
-      // --- AUTO SCROLL ---
-      const startAutoScroll = () => {
-        if (!autoInterval) return;
-        stopAutoScroll();
-        autoTimer = setInterval(() => {
-          if (!container.matches(':hover')) {
-            scrollMove(1);
+        // check nếu overflow hay không
+        const checkOverflow = () => {
+          // scrollWidth so sánh với clientWidth
+          const need = viewport.scrollWidth > viewport.clientWidth + 1;
+          if (!need) {
+            btnPrev && btnPrev.classList.add('d-none');
+            btnNext && btnNext.classList.add('d-none');
+          } else {
+            updateNavButtons();
           }
-        }, autoInterval);
-      };
+        };
 
-      const stopAutoScroll = () => {
-        if (autoTimer) {
-          clearInterval(autoTimer);
-          autoTimer = null;
+        // ẩn/hiện nút
+        const updateNavButtons = () => {
+          if (!btnPrev || !btnNext) return;
+          const sl = Math.round(viewport.scrollLeft);
+          const max = Math.round(viewport.scrollWidth - viewport.clientWidth);
+          if (sl <= 2) btnPrev.classList.add('d-none'); else btnPrev.classList.remove('d-none');
+          if (sl >= max - 2) btnNext.classList.add('d-none'); else btnNext.classList.remove('d-none');
+        };
+
+        // infinite scroll xử lý khi user kéo
+        const handleInfiniteOnScroll = () => {
+          if (isAnimating) return;
+          const half = viewport.scrollWidth / 2;
+          if (!isFinite(half) || half === 0) return;
+
+          const buffer = 10;
+          if (viewport.scrollLeft >= half + buffer) {
+            viewport.scrollLeft = viewport.scrollLeft - half;
+          } else if (viewport.scrollLeft <= buffer) {
+            viewport.scrollLeft = viewport.scrollLeft + half;
+          }
+          updateNavButtons();
+        };
+
+        // di chuyển bằng nút
+        const scrollByItems = (direction) => {
+          if (isAnimating) return;
+          isAnimating = true;
+          viewport.classList.add('no-snap');
+
+          const itemW = getItemWidth();
+          const half = viewport.scrollWidth / 2;
+
+          if (direction === 1 && viewport.scrollLeft >= half - itemW) {
+            viewport.scrollLeft -= half;
+          } else if (direction === -1 && viewport.scrollLeft <= itemW) {
+            viewport.scrollLeft += half;
+          }
+
+          // thực hiện scroll mượt
+          viewport.scrollBy({ left: direction * itemW, behavior: 'smooth' });
+
+          setTimeout(() => {
+            // nếu vượt nửa track thì lùi lại 1 nửa để giữ infinite illusion
+            if (viewport.scrollLeft >= half) viewport.scrollLeft = viewport.scrollLeft - half;
+            isAnimating = false;
+            viewport.classList.remove('no-snap');
+            updateNavButtons();
+          }, 420);
+        };
+
+        // bắt sự kiện nút
+        if (btnPrev) {
+          btnPrev.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            stopAuto();
+            scrollByItems(-1);
+          });
         }
-      };
+        if (btnNext) {
+          btnNext.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            stopAuto();
+            scrollByItems(1);
+          });
+        }
 
-      if (autoInterval) {
-        container.addEventListener('mouseenter', stopAutoScroll);
-        container.addEventListener('mouseleave', startAutoScroll);
-        container.addEventListener('touchstart', stopAutoScroll);
-        container.addEventListener('touchend', startAutoScroll);
-        startAutoScroll();
+        const startAuto = () => {
+          if (!autoMs) return;
+          stopAuto();
+          autoTimer = setInterval(() => {
+            // nếu hover thì bỏ qua
+            if (viewport.matches(':hover')) return;
+            scrollByItems(1);
+          }, autoMs);
+        };
+        const stopAuto = () => {
+          if (autoTimer) {
+            clearInterval(autoTimer);
+            autoTimer = null;
+          }
+        };
+
+        if (autoMs) {
+          viewport.addEventListener('mouseenter', stopAuto);
+          viewport.addEventListener('mouseleave', startAuto);
+          viewport.addEventListener('touchstart', stopAuto, { passive: true });
+          viewport.addEventListener('touchend', startAuto, { passive: true });
+          startAuto();
+        }
+
+        viewport.addEventListener('scroll', throttle(handleInfiniteOnScroll, 80));
+
+        window.addEventListener('resize', debounce(() => {
+          checkOverflow();
+        }, 150));
+
+        const mo = new MutationObserver(() => {
+          // nếu chưa duplicate thì duplicate
+          if (!container.dataset.duplicated) {
+            const itemsNow = Array.from(track.children);
+            if (itemsNow.length > 1) {
+              track.innerHTML = track.innerHTML + track.innerHTML;
+              container.dataset.duplicated = '1';
+            }
+          }
+          checkOverflow();
+        });
+        mo.observe(track, { childList: true, subtree: false });
+
+        // khởi tạo hiển thị nút
+        // đặt scrollLeft ở giữa (nếu duplicate) để tránh rơi vào biên
+        if (container.dataset.duplicated) {
+          const half = viewport.scrollWidth / 4; // đặt vào block giữa
+          viewport.scrollLeft = half;
+        }
+
+        // kiểm tra ban đầu
+        setTimeout(checkOverflow, 60);
+
+        // util: debounce / throttle
+        function debounce(fn, ms) {
+          let t;
+          return function () {
+            clearTimeout(t);
+            t = setTimeout(() => fn.apply(this, arguments), ms);
+          };
+        }
+        function throttle(fn, ms) {
+          let last = 0;
+          return function () {
+            const now = Date.now();
+            if (now - last >= ms) {
+              last = now;
+              fn.apply(this, arguments);
+            }
+          };
+        }
       }
-    };
 
-    document.addEventListener('DOMContentLoaded', () => {
-      // Khởi tạo các slider
-      initHorizontalScroller({
-        wrapperSelector: '.related-scroll-wrapper',
-        prevBtnId: 'scrollLeftBtn',
-        nextBtnId: 'scrollRightBtn',
-        autoInterval: 4000,
-      });
-
-      initHorizontalScroller({
-        wrapperSelector: '.lastest-scroll-wrapper',
-        prevBtnId: 'lastScrollLeftBtn',
-        nextBtnId: 'lastScrollRightBtn',
-        autoInterval: 4000,
-      });
-    });
+      // khởi chạy sau DOM load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initAll);
+      } else {
+        initAll();
+      }
+    })();
   </script>
+
   <script>
     function toggleConsultModal(show = true) {
       document.getElementById("consult-modal").style.display = show ? "flex" : "none";
