@@ -1232,6 +1232,30 @@
 .scroll-viewport::-webkit-scrollbar { height: 8px; }
 .scroll-viewport::-webkit-scrollbar-thumb { background: #ccc; border-radius: 6px; }
 
+.scroll-track {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.scroll-track .item {
+  flex: 0 0 80%;     
+  min-width: 260px;  
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .scroll-track .item {
+    flex: 0 0 48%;    
+  }
+}
+
+@media (min-width: 1024px) {
+  .scroll-track .item {
+    flex: 0 0 33%;    
+  }
+}
+
 
 /* Breadcrumb */
 .breadcrumb {
