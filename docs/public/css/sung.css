@@ -2,6 +2,11 @@
   scroll-snap-type: none !important;
 }
 /* header */
+
+.header-bottom-2 {
+  z-index: auto !important;
+}
+
 .fe-header .box-icon .icon {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.6);
