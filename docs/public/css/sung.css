@@ -44,6 +44,19 @@
     border-bottom: 1px solid red;
 }
 
+body:not(.header-sticky) .fe-header{
+  position: fixed;
+}
+
+#header-sticky {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  will-change: opacity, transform;
+}
+
+.fe-header.scrolling #header-sticky {
+  display: none;
+}
+
 .navbar-nav .nav-link {
   white-space: nowrap;   
   display: inline-flex;  
