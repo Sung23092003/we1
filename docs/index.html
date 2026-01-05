@@ -8629,6 +8629,25 @@
     })();
   </script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const header = document.querySelector('.fe-header');
+
+      if (!header) {
+        console.warn('Không tìm thấy .fe-header');
+        return;
+      }
+
+      const observer = new ResizeObserver(entries => {
+        const height = entries[0].contentRect.height;
+        document.documentElement.style
+          .setProperty('--header-height', `${height}px`);
+      });
+
+      observer.observe(header);
+    });
+  </script>
+
 
 </body>
 
