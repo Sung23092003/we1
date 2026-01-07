@@ -2688,3 +2688,238 @@ body:not(.header-sticky) .fe-header {
 .footer-6 .icon-social:hover {
   opacity: 0.8;
 }
+
+.register-page {
+  --bg: #f3f6fb;
+  --card: #ffffff;
+  --text: #0b1324;
+  --muted: #374151;
+  --line: #e5e7eb;
+  --primary: #2563eb;
+  --primary2: #1d4ed8;
+  --shadow: 0 20px 40px rgba(0, 0, 0, .08);
+  --radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(var(--header-height)/2);
+  margin-bottom: var(--header-height);
+  width: 100%;
+}
+
+.register-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* reset trong scope */
+.register-page * {
+  box-sizing: border-box;
+}
+
+/* CARD */
+.register-card {
+  width: min(1080px, 100%);
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 36px 40px;
+}
+
+/* TITLE */
+.register-title {
+  text-align: center;
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.register-desc {
+  text-align: center;
+  margin: 10px auto 26px;
+  max-width: 680px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* TABS */
+.register-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.register-tab {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.register-tab.is-active {
+  background: var(--primary);
+  color: #fff;
+  border-color: transparent;
+}
+
+.register-tab.is-gmail {
+  background: linear-gradient(135deg, #EA4335, #FBBC05);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* CONTENT */
+.register-content {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .register-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FORM GRID */
+.register-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.register-form-full {
+  grid-column: 1 / -1;
+}
+
+/* FORM */
+.register-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.register-input {
+  margin-top: 6px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--text);
+}
+
+/* PASSWORD */
+.register-pass {
+  position: relative;
+  padding-top: 6px;
+}
+
+.register-pass input {
+  margin-top: 0;
+}
+
+.register-toggle-pass {
+  position: absolute;
+  right: 10px;
+  top: 56%;
+  transform: translateY(-50%);
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  padding: 7px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* ACTIONS */
+.register-actions {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.register-btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 0;
+}
+
+.register-btn.is-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.register-btn.is-ghost {
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+/* GMAIL BOX */
+.register-gmail {
+  padding: 24px 26px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fafafa;
+  height: 100%;
+}
+
+.register-gmail h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.register-gmail p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.register-gmail-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.register-gmail-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: conic-gradient(from 45deg,
+      #4285F4,
+      #34A853,
+      #FBBC05,
+      #EA4335,
+      #4285F4);
+}
+
+.register-secure {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #374151;
+}
+
+@media (max-width: 768px) {
+  .register-form-grid {
+    grid-template-columns: 1fr; 
+  }
+}
