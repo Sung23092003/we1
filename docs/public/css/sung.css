@@ -2922,16 +2922,31 @@ body:not(.header-sticky) .fe-header {
   color: #374151;
 }
 
+@media (max-width: 998px) {
+  main:not(.register-page) {
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .register-form-grid {
     grid-template-columns: 1fr;
   }
 
-  main:not(.register-page) {
-    padding-top: 0;
-  }
-
   .register-page {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .register-page {
+    margin-top: 60px;
+  }
+
+  .register-actions {
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
   }
 }
