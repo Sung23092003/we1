@@ -2690,20 +2690,11 @@ body:not(.header-sticky) .fe-header {
 }
 
 .register-page {
-  --bg: #f3f6fb;
-  --card: #ffffff;
-  --text: #0b1324;
-  --muted: #374151;
-  --line: #e5e7eb;
-  --primary: #2563eb;
-  --primary2: #1d4ed8;
-  --shadow: 0 20px 40px rgba(0, 0, 0, .08);
-  --radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: calc(var(--header-height)/2);
-  margin-bottom: var(--header-height);
+  margin-top: 140px;
+  margin-bottom: 40px;
   width: 100%;
 }
 
@@ -2721,9 +2712,9 @@ body:not(.header-sticky) .fe-header {
 /* CARD */
 .register-card {
   width: min(1080px, 100%);
-  background: var(--card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
   padding: 36px 40px;
 }
 
@@ -2741,7 +2732,7 @@ body:not(.header-sticky) .fe-header {
   max-width: 680px;
   font-size: 15px;
   line-height: 1.6;
-  color: var(--muted);
+  color: #374151;
 }
 
 /* TABS */
@@ -2755,17 +2746,32 @@ body:not(.header-sticky) .fe-header {
 .register-tab {
   padding: 10px 18px;
   border-radius: 999px;
-  border: 1px solid var(--line);
+  border: 1px solid #e5e7eb;
   background: #fff;
   cursor: pointer;
   font-weight: 700;
-  color: var(--text);
+  color: #0b1324;
 }
 
 .register-tab.is-active {
-  background: var(--primary);
+  background: #2563eb;
   color: #fff;
   border-color: transparent;
+}
+
+:is(
+  .register-tab.is-active,
+  .register-tab.is-gmail,
+  .register-btn.is-primary
+):hover {
+  opacity: 0.8;
+}
+
+:is(
+.register-btn.is-ghost,
+.register-gmail-btn,
+.register-toggle-pass):hover {
+  background: #f9fafb;
 }
 
 .register-tab.is-gmail {
@@ -2810,9 +2816,9 @@ body:not(.header-sticky) .fe-header {
   width: 100%;
   padding: 12px 14px;
   border-radius: 14px;
-  border: 1px solid var(--line);
+  border: 1px solid #e5e7eb;
   font-size: 14px;
-  color: var(--text);
+  color: #0b1324;
 }
 
 /* PASSWORD */
@@ -2830,9 +2836,9 @@ body:not(.header-sticky) .fe-header {
   right: 10px;
   top: 56%;
   transform: translateY(-50%);
-  border: 1px solid var(--line);
+  border: 1px solid #e5e7eb;
   background: #fff;
-  color: var(--text);
+  color: #0b1324;
   padding: 7px 10px;
   border-radius: 999px;
   cursor: pointer;
@@ -2844,7 +2850,8 @@ body:not(.header-sticky) .fe-header {
 .register-actions {
   margin-top: 26px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 32px;
 }
 
 .register-btn {
@@ -2856,20 +2863,20 @@ body:not(.header-sticky) .fe-header {
 }
 
 .register-btn.is-primary {
-  background: var(--primary);
+  background: #2563eb;
   color: #fff;
 }
 
 .register-btn.is-ghost {
   background: #fff;
-  border: 1px solid var(--line);
-  color: var(--text);
+  border: 1px solid #e5e7eb;
+  color: #0b1324;
 }
 
 /* GMAIL BOX */
 .register-gmail {
   padding: 24px 26px;
-  border: 1px solid var(--line);
+  border: 1px solid #e5e7eb;
   border-radius: 20px;
   background: #fafafa;
   height: 100%;
@@ -2884,14 +2891,14 @@ body:not(.header-sticky) .fe-header {
 .register-gmail p {
   margin: 0 0 16px;
   font-size: 14px;
-  color: var(--muted);
+  color: #374151;
 }
 
 .register-gmail-btn {
   width: 100%;
   padding: 14px;
   border-radius: 14px;
-  border: 1px solid var(--line);
+  border: 1px solid #e5e7eb;
   background: #fff;
   font-weight: 700;
   display: flex;
@@ -2921,5 +2928,9 @@ body:not(.header-sticky) .fe-header {
 @media (max-width: 768px) {
   .register-form-grid {
     grid-template-columns: 1fr; 
+  }
+
+  .register-page {
+    margin-top: 0;
   }
 }
