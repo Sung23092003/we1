@@ -1976,6 +1976,53 @@
         });
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const toggleButtons = document.querySelectorAll(".toggle-pass");
+
+            toggleButtons.forEach(btn => {
+                btn.addEventListener("click", function () {
+                    const targetId = this.getAttribute("data-target");
+                    const input = document.getElementById(targetId);
+
+                    if (!input) return;
+
+                    if (input.type === "password") {
+                        input.type = "text";
+                        this.textContent = "Ẩn";
+                    } else {
+                        input.type = "password";
+                        this.textContent = "Hiện";
+                    }
+                });
+            });
+
+            const resetBtn = document.querySelector(".register-btn.is-ghost");
+
+            if (resetBtn) {
+                resetBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const inputs = document.querySelectorAll(
+                        ".register-form-grid input"
+                    );
+
+                    inputs.forEach(input => {
+                        input.value = "";
+                        if (input.type === "text" && input.id.includes("password")) {
+                            input.type = "password";
+                        }
+                    });
+
+                    toggleButtons.forEach(btn => {
+                        btn.textContent = "Hiện";
+                    });
+                });
+            }
+
+        });
+    </script>
 
 </body>
 

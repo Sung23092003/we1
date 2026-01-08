@@ -1,6 +1,11 @@
 /* padding để cách header ra */
 body {}
 
+.banner-full-width .slick-slide img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 main {
   padding-top: var(--header-height);
   overflow: hidden !important;

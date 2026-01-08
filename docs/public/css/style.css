@@ -2206,8 +2206,6 @@ header .btn-close:before, header .btn-close:after {
 }
 .banner-full-width .slick-slide img {
   margin: auto;
-  width: 100% !important;
-  height: 100% !important;
 }
 
 .banner_slide .slick-dots li {
