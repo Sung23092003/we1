@@ -15,6 +15,42 @@ main {
   scroll-snap-type: none !important;
 }
 
+/* fix nav hover hụt */
+.menu-dropdown {
+  position: relative;
+}
+
+.nav-submenu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  min-width: 220px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity .2s ease;
+  z-index: 999;
+}
+
+.menu-dropdown:hover>.nav-submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav-submenu::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+}
+/* end : fix nav hover hụt */
+
 /* header */
 
 .header-bottom-2 {
