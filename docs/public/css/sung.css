@@ -1,3 +1,20 @@
+ul {
+  list-style: inherit !important;
+  margin-left: 4%;
+}
+
+@media(min-width: 481px) and (max-width: 768px) {
+  ul {
+    margin-left: 6%;
+  }
+}
+
+@media(max-width: 480px) {
+  ul {
+    margin-left: 12%;
+  }
+}
+
 /* padding để cách header ra */
 body {}
 
@@ -49,6 +66,7 @@ main {
   height: 50px;
   background: transparent;
 }
+
 /* end : fix nav hover hụt */
 
 /* header */
