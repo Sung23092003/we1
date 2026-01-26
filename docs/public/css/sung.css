@@ -15,6 +15,10 @@ p+ul {
   }
 }
 
+p+ul.list-number {
+  list-style-type: decimal !important;
+}
+
 /* padding để cách header ra */
 body {}
 
