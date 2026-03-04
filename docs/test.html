@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="keywords" content="Mỹ phẩm">
+    <meta name="description" content="Mỹ phẩm">
+    <meta name="robots" content="index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
+    <link rel="icon" type="image/x-icon" href="admin/public/images/footer/17408141534560x60.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="public/assets/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="public/assets/css/slick-lightbox.css">
+    <link rel="stylesheet" href="public/assets/css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link href="public/assets/style.css" rel="stylesheet" type="text/css">
+    <link href="public/assets/style-2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="public/css/tailwin-dist.css">
+    <!-- home-->
+    <link href="public/assets/home.css" rel="stylesheet" type="text/css">
+    <!-- product-->
+    <link rel="stylesheet" href="public/css/product/base.css" type="text/css">
+    <link rel="stylesheet" href="public/css/product/detail.css" type="text/css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/sung.css">
+    <style>
+        .list-blog-relate img {
+            width: 100%;
+        }
+
+        .list-blog-relate {
+            padding: 0 12px;
+            border: 1px solid #ccc;
+        }
+
+        .list-blog-relate .blog-relate {
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .blog-relate-title a {
+            text-decoration: none;
+            color: #000000;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-weight: 500;
+        }
+
+        .blog-relate-thumbnail img {
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .p-r-0 {
+            padding-right: 0 !important;
+        }
+
+        .single_blog.list_blog {
+            margin-bottom: 30px;
+        }
+
+        /* Featured Slider Styles */
+        .featured-slider-wrapper {
+            padding: 0 40px;
+        }
+
+        .featured-slider .col-md-3 {
+            padding: 0 10px;
+        }
+
+        .featured-slider article {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .featured-slider article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .featured-slider article .img {
+            display: block;
+            overflow: hidden;
+        }
+
+        .featured-slider article .img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-slider article:hover .img img {
+            transform: scale(1.05);
+        }
+
+        .featured-slider article h2 {
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 12px;
+            font-weight: 500;
+        }
+
+        .featured-slider article h2 a {
+            color: #333;
+            text-decoration: none;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .featured-slider article h2 a:hover {
+            color: #011151;
+        }
+
+        .featured-slider-wrapper .nav-arrow {
+            opacity: 0.7;
+            transition: opacity 0.3s ease, background 0.3s ease;
+        }
+
+        .featured-slider-wrapper .nav-arrow:hover {
+            opacity: 1;
+            background: #022175;
+        }
+
+        @media (max-width: 768px) {
+            .featured-slider-wrapper {
+                padding: 0 30px;
+            }
+
+            .featured-slider-wrapper .nav-arrow {
+                width: 30px;
+                height: 30px;
+            }
+
+            .featured-slider-wrapper .nav-prev {
+                left: -30px;
+            }
+
+            .featured-slider-wrapper .nav-next {
+                right: -30px;
+            }
+        }
+    </style>
+    <style>
+        :root {
+            --background-color-main: #011151;
+            --company-phone-number: '0913 613 477';
+        }
+
+        .header-background-text-color {
+            background-color: #011151 !important;
+            color: #ffffff !important;
+        }
+
+        .header-boder-color {
+            border-color: #011151 !important;
+        }
+
+        .navbar-mobile {
+            display: none;
+        }
+
+        .contact.pt-1 {
+            padding-left: 20px;
+        }
+
+        ul.category-dektop {
+            justify-content: unset !important;
+        }
+
+        @media (min-width: 992px) {
+            body {
+                margin-top: 99px !important;
+            }
+
+            .footer_copyright_left {
+                display: flex;
+                justify-content: center;
+            }
+
+            .footer_copyright_left div {
+                height: 22px;
+                border-left: 1px solid #000;
+                margin-left: 6px;
+                padding-left: 5px;
+                margin-top: 1px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            body {
+                margin-top: 0px !important;
+            }
+
+            header .header-bottom {
+                background-color: #f2f2f2 !important;
+            }
+
+            .navbar-mobile {
+                display: block;
+            }
+
+            .category-dektop {
+                display: none !important;
+            }
+
+            .header-bottom-2 {
+                border-top: 1px solid #f8f9fa !important;
+                background: #f8f9fa !important;
+                color: #212529 !important;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .category-dektop {
+                display: none !important;
+            }
+
+            .mobile-menu .navbar-nav>.nav-item.category-dektop {
+                display: none !important;
+            }
+        }
+    </style>
+    <link href="https://xaydungnhadanang.io.vn/public/css/vuong.css?v=1.0.0" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="single_blog" style="padding-top: 15px;">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active"><a href="https://xaydungnhadanang.io.vn">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Dịch Vụ Xây Nhà Cấp 4 Đà Nẵng
+                                    Trọn Gói – Báo Giá &amp; Kinh Nghiệm 2026</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-12 col-xl-8 list-blog">
+                        <section class="details">
+                            <h1 class="mt-0">Dịch Vụ Xây Nhà Cấp 4 Đà Nẵng Trọn Gói – Báo Giá &amp; Kinh Nghiệm 2026
+                            </h1>
+
+                            <section class="py-32" style="background-color: #f2f2f2; margin: 0">
+                                <div class="container">
+                                    <div class="bg-white rounded-8 pb-12 box-shadow sm:px-16">
+                                        <div class="wrapper">
+
+                                            <!-- HEADER -->
+                                            <div
+                                                class="item_frame_header gap-x-24 flex gap-y-8px p-0 max-sm:flex-col sm:align-items-center">
+                                                <a class="item_frame_title header-boder-color flex-shrink-0">
+                                                    <h2 class="text-nowrap" style="color: #000000 !important;">
+                                                        BÀI NỔI BẬT
+                                                    </h2>
+                                                </a>
+                                            </div>
+
+                                            <!-- SLIDER -->
+                                            <div class="products-list-row1 slider-2 slick-initialized slick-slider">
+                                                <button class="slick-prev slick-arrow" aria-label="Previous"
+                                                    type="button" style="" fdprocessedid="y9geek">Previous</button>
+                                                <div class="slick-list draggable">
+                                                    <div class="slick-track"
+                                                        style="opacity: 1; width: 768px; transform: translate3d(0px, 0px, 0px);">
+
+                                                        <!-- ITEM 1 -->
+                                                        <div class="product_list item_frame slick-slide"
+                                                            data-slick-index="0" aria-hidden="false" tabindex="0"
+                                                            style="width: 192px;">
+                                                            <div class="product is-sale header-boder-color">
+                                                                <div class="inner p-2 rounded-3">
+                                                                    <a class="product-thumbnail"
+                                                                        href="https://xaydungnhadanang.io.vn/dich-vu/xay-nha-ong-tai-cac-quan-da-nang-bao-gia-va-quy-trinh-thi-cong">
+                                                                        <img class="rounded-3" loading="lazy"
+                                                                            src="https://xaydungnhadanang.io.vn/admin/public/images/blog/176547433811xay-nha-ong-cac-quan-da-nang.jpg"
+                                                                            alt="Xây Nhà Ống Tại Các Quận Đà Nẵng">
+                                                                    </a>
+                                                                    <div
+                                                                        class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                                        <button
+                                                                            class="btn-action w-32 h-36 btn-addToCart"
+                                                                            onclick="javascript:addProductToCart('1');">
+                                                                            <i class="fa-solid fa-cart-plus"></i>
+                                                                            <span class="sub text-12">Thêm vào
+                                                                                giỏ</span>
+                                                                        </button>
+                                                                        <button class="btn-action w-32 h-36"
+                                                                            onclick="javascript:buyProductNow('1');">
+                                                                            <i
+                                                                                class="fa-solid fa-money-check-dollar"></i>
+                                                                            <span class="sub text-12">Mua ngay</span>
+                                                                        </button>
+                                                                        <button class="btn-action w-32 h-36"
+                                                                            onclick="javascript:window.location.href='https://xaydungnhadanang.io.vn/dich-vu/xay-nha-ong-tai-cac-quan-da-nang-bao-gia-va-quy-trinh-thi-cong'">
+                                                                            <i class="fa-solid fa-eye"></i>
+                                                                            <span class="sub text-12">Xem chi
+                                                                                tiết</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="inner-prod">
+                                                                        <h3 class="product-title font-bold">
+                                                                            <a href="#">Xây Nhà Ống Tại Các Quận Đà
+                                                                                Nẵng</a>
+                                                                        </h3>
+                                                                        <div class="product-rate flex text-12">
+                                                                            <ul>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star-half-alt"></i>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div
+                                                                            class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                                            <button
+                                                                                class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white">
+                                                                                <i
+                                                                                    class="fa-solid fa-phone mr-4px"></i>0847
+                                                                                865 568
+                                                                            </button>
+                                                                            <button
+                                                                                class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white">
+                                                                                <i
+                                                                                    class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                                                cầu tư vấn
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- ITEM 2 -->
+                                                        <div class="product_list item_frame slick-slide"
+                                                            data-slick-index="1" aria-hidden="true" tabindex="-1"
+                                                            style="width: 192px;">
+                                                            <div class="product is-sale header-boder-color">
+                                                                <div class="inner p-2 rounded-3">
+                                                                    <a class="product-thumbnail"
+                                                                        href="https://xaydungnhadanang.io.vn/dich-vu/dich-vu-xay-nha-ong-da-nang">
+                                                                        <img class="rounded-3" loading="lazy"
+                                                                            src="https://xaydungnhadanang.io.vn/admin/public/images/blog/176241705878xay-nha-ong-da-nang-hndc.jpg"
+                                                                            alt="Dịch Vụ Xây Nhà Ống Đà Nẵng">
+                                                                    </a>
+                                                                    <div
+                                                                        class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                                        <button
+                                                                            class="btn-action w-32 h-36 btn-addToCart"
+                                                                            onclick="javascript:addProductToCart('2');">
+                                                                            <i class="fa-solid fa-cart-plus"></i>
+                                                                            <span class="sub text-12">Thêm vào
+                                                                                giỏ</span>
+                                                                        </button>
+                                                                        <button class="btn-action w-32 h-36"
+                                                                            onclick="javascript:buyProductNow('2');">
+                                                                            <i
+                                                                                class="fa-solid fa-money-check-dollar"></i>
+                                                                            <span class="sub text-12">Mua ngay</span>
+                                                                        </button>
+                                                                        <button class="btn-action w-32 h-36"
+                                                                            onclick="javascript:window.location.href='https://xaydungnhadanang.io.vn/dich-vu/dich-vu-xay-nha-ong-da-nang'">
+                                                                            <i class="fa-solid fa-eye"></i>
+                                                                            <span class="sub text-12">Xem chi
+                                                                                tiết</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="inner-prod">
+                                                                        <h3 class="product-title font-bold">
+                                                                            <a href="#">Dịch Vụ Xây Nhà Ống Đà Nẵng</a>
+                                                                        </h3>
+                                                                        <div class="product-rate flex text-12">
+                                                                            <ul>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div
+                                                                            class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                                            <button
+                                                                                class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white">
+                                                                                <i
+                                                                                    class="fa-solid fa-phone mr-4px"></i>0847
+                                                                                865 568
+                                                                            </button>
+                                                                            <button
+                                                                                class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white">
+                                                                                <i
+                                                                                    class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                                                cầu tư vấn
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- ITEM 3 -->
+                                                        <div class="product_list item_frame slick-slide"
+                                                            data-slick-index="2" aria-hidden="true" tabindex="-1"
+                                                            style="width: 192px;">
+                                                            <div class="product is-sale header-boder-color">
+                                                                <div class="inner p-2 rounded-3">
+                                                                    <a class="product-thumbnail"
+                                                                        href="https://xaydungnhadanang.io.vn/dich-vu/xay-nha-3-tang-da-nang">
+                                                                        <img class="rounded-3" loading="lazy"
+                                                                            src="https://xaydungnhadanang.io.vn/admin/public/images/blog/177241753672dich-vu-xay-nha-3-tang-Da-Nang.jpg"
+                                                                            alt="Xây Nhà 3 Tầng">
+                                                                    </a>
+                                                                    <div
+                                                                        class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                                        <button
+                                                                            class="btn-action w-32 h-36 btn-addToCart"
+                                                                            onclick="javascript:addProductToCart('3');">
+                                                                            <i class="fa-solid fa-cart-plus"></i>
+                                                                            <span class="sub text-12">Thêm vào
+                                                                                giỏ</span>
+                                                                        </button>
+                                                                        <button class="btn-action w-32 h-36"
+                                                                            onclick="javascript:buyProductNow('3');">
+                                                                            <i
+                                                                                class="fa-solid fa-money-check-dollar"></i>
+                                                                            <span class="sub text-12">Mua ngay</span>
+                                                                        </button>
+                                                                        <button class="btn-action w-32 h-36"
+                                                                            onclick="javascript:window.location.href='https://xaydungnhadanang.io.vn/dich-vu/xay-nha-3-tang-da-nang'">
+                                                                            <i class="fa-solid fa-eye"></i>
+                                                                            <span class="sub text-12">Xem chi
+                                                                                tiết</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="inner-prod">
+                                                                        <h3 class="product-title font-bold">
+                                                                            <a href="#">Xây Nhà 3 Tầng Đà Nẵng</a>
+                                                                        </h3>
+                                                                        <div class="product-rate flex text-12">
+                                                                            <ul>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div
+                                                                            class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                                            <button
+                                                                                class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white">
+                                                                                <i
+                                                                                    class="fa-solid fa-phone mr-4px"></i>0847
+                                                                                865 568
+                                                                            </button>
+                                                                            <button
+                                                                                class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white">
+                                                                                <i
+                                                                                    class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                                                cầu tư vấn
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- ITEM 4 -->
+                                                        <div class="product_list item_frame slick-slide"
+                                                            data-slick-index="3" aria-hidden="true" tabindex="-1"
+                                                            style="width: 192px;">
+                                                            <div class="product is-sale header-boder-color">
+                                                                <div class="inner p-2 rounded-3">
+                                                                    <a class="product-thumbnail"
+                                                                        href="https://xaydungnhadanang.io.vn/dich-vu/xay-nha-cap-4-tai-cac-quan-da-nang">
+                                                                        <img class="rounded-3" loading="lazy"
+                                                                            src="https://xaydungnhadanang.io.vn/admin/public/images/blog/176564242144xay-nha-cap-4.jpg"
+                                                                            alt="Xây Nhà Cấp 4">
+                                                                    </a>
+                                                                    <div
+                                                                        class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                                        <button
+                                                                            class="btn-action w-32 h-36 btn-addToCart"
+                                                                            onclick="javascript:addProductToCart('4');">
+                                                                            <i class="fa-solid fa-cart-plus"></i>
+                                                                            <span class="sub text-12">Thêm vào
+                                                                                giỏ</span>
+                                                                        </button>
+                                                                        <button class="btn-action w-32 h-36"
+                                                                            onclick="javascript:buyProductNow('4');">
+                                                                            <i
+                                                                                class="fa-solid fa-money-check-dollar"></i>
+                                                                            <span class="sub text-12">Mua ngay</span>
+                                                                        </button>
+                                                                        <button class="btn-action w-32 h-36"
+                                                                            onclick="javascript:window.location.href='https://xaydungnhadanang.io.vn/dich-vu/xay-nha-cap-4-tai-cac-quan-da-nang'">
+                                                                            <i class="fa-solid fa-eye"></i>
+                                                                            <span class="sub text-12">Xem chi
+                                                                                tiết</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="inner-prod">
+                                                                        <h3 class="product-title font-bold">
+                                                                            <a href="#">Xây Nhà Cấp 4 Đà Nẵng</a>
+                                                                        </h3>
+                                                                        <div class="product-rate flex text-12">
+                                                                            <ul>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                                <li><i class="fa fa-star"></i></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div
+                                                                            class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                                            <button
+                                                                                class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white">
+                                                                                <i
+                                                                                    class="fa-solid fa-phone mr-4px"></i>0847
+                                                                                865 568
+                                                                            </button>
+                                                                            <button
+                                                                                class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white">
+                                                                                <i
+                                                                                    class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                                                cầu tư vấn
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <button class="slick-next slick-arrow" aria-label="Next"
+                                                    type="button">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="d-none d-xl-block col-xl-4">
+                                <div class="row justify-content-end">
+                                    <div class="col-11">
+                                        <div class="list-blog-relate">
+
+                                            <div class="blog-relate d-flex justify-content-evenly">
+                                                <div class="row align-items-center flex-grow-1">
+                                                    <div class="col-7 p-r-0">
+                                                        <div class="blog-relate-title">
+                                                            <a href="https://xaydungnhadanang.io.vn/tin-tuc/chi-phi-xay-nha-cap-4-da-nang-2025"
+                                                                title="Chi phí xây nhà cấp 4 Đà Nẵng 2025 – Báo giá cập nhật mới nhất, tối ưu ngân sách hiệu quả">
+                                                                Chi phí xây nhà cấp 4 Đà Nẵng 2025 – Báo giá cập nhật
+                                                                mới
+                                                                nhất, tối ưu ngân sách hiệu quả </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a href="https://xaydungnhadanang.io.vn/tin-tuc/chi-phi-xay-nha-cap-4-da-nang-2025"
+                                                            class="blog-relate-thumbnail">
+                                                            <img loading="lazy"
+                                                                src="https://xaydungnhadanang.io.vn/admin/public/images/blog/17652874948117646019605chi-phi-xay-nha-cap-4-da-nang-2025 (1).jpg"
+                                                                alt="Chi phí xây nhà cấp 4 Đà Nẵng 2025 – Báo giá cập nhật mới nhất, tối ưu ngân sách hiệu quả">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="py-32" style="background-color: #f2f2f2; margin: 0">
+            <div class="container">
+                <div class="bg-white rounded-8 pb-12 box-shadow sm:px-16">
+                    <div class="wrapper">
+                        <div
+                            class="item_frame_header gap-x-24 flex gap-y-8px p-0 max-sm:flex-col sm:align-items-center">
+                            <a class="item_frame_title header-boder-color flex-shrink-0" href="/san-pham">
+                                <h2 class="text-nowrap" style="color: #000000 !important;">ĐỒNG HỒ THỜI TRANG</h2>
+                            </a>
+                            <div class="d-flex flex-grow-1 justify-end overflow-hidden">
+                                <div class="menu-slider-wrapper">
+                                    <div class="nav-arr nav-prev d-none">&lt;</div>
+                                    <div class="menu-scroll-container">
+                                        <ul class="sub_menu_title text-12 text-nowrap flex gap-12">
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-nam">Đồng Hồ Nam</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-nu">Đồng Hồ Nữ</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-doi">Đồng Hồ Đôi</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-99k">Đồng Hồ 99K</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-mau-den">Đồng Hồ Màu Đen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-mau-vang">Đồng Hồ Màu Vàng</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-mau-trang">Đồng Hồ Màu Trắng</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-day-da">Đồng Hồ Dây Da</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-day-demi">Đồng Hồ Dây Demi</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-rong-phuong">Đồng hồ Rồng
+                                                    Phượng</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dong-ho-thoi-trang/dong-ho-co">Đồng Hồ Cơ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-arr nav-next">&gt;</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-list-row1 slider-2 slick-initialized slick-slider"><button
+                                class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""
+                                fdprocessedid="y9geek">Previous</button>
+                            <div class="slick-list draggable">
+                                <div class="slick-track"
+                                    style="opacity: 1; width: 5952px; transform: translate3d(-1728px, 0px, 0px);">
+
+                                    <div class="product_list item_frame slick-slide slick-cloned" data-slick-index="-3"
+                                        id="" aria-hidden="true" tabindex="-1" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/san-pham-in-an-danh-thiep"
+                                                    tabindex="-1">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175030183616CTV up bài.jpg"
+                                                        alt="Sản phẩm in ấn Danh thiếp">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('371');" tabindex="-1"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('371');" tabindex="-1"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/san-pham-in-an-danh-thiep'"
+                                                        tabindex="-1"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/san-pham-in-an-danh-thiep"
+                                                            tabindex="-1">Sản phẩm in ấn Danh thiếp</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="-1">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Sản phẩm in ấn Danh thiếp', 'images/product/175030183616CTV up bài.jpg')"
+                                                            tabindex="-1"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide slick-cloned" data-slick-index="-2"
+                                        id="" aria-hidden="true" tabindex="-1" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/dong-ho-the-thao-6-kim-nam-day-trang-mat-xanh-doc-dao-deo-di-choi-the-thao-hoc-tap"
+                                                    tabindex="-1">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175169986141EY-678.jpg"
+                                                        alt="Đồng hồ thể thao 6 kim nam, dây trắng mặt Xanh độc đáo, đeo đi chơi, thể thao, học tập...">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('379');" tabindex="-1"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('379');" tabindex="-1"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/dong-ho-the-thao-6-kim-nam-day-trang-mat-xanh-doc-dao-deo-di-choi-the-thao-hoc-tap'"
+                                                        tabindex="-1"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/dong-ho-the-thao-6-kim-nam-day-trang-mat-xanh-doc-dao-deo-di-choi-the-thao-hoc-tap"
+                                                            tabindex="-1">Đồng hồ thể thao 6 kim nam, dây trắng mặt Xanh
+                                                            độc
+                                                            đáo, đeo đi chơi, thể thao, học tập...</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-meta text-center">
+                                                        <span class="product-price product-sale-price">350.000
+                                                            <sup>đ</sup></span>
+                                                        <span class="product-price font-bold">3.200.000
+                                                            <sup>đ</sup></span>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="-1">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Đồng hồ thể thao 6 kim nam, dây trắng mặt Xanh độc đáo, đeo đi chơi, thể thao, học tập...', 'images/product/175169986141EY-678.jpg')"
+                                                            tabindex="-1"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide slick-cloned" data-slick-index="-1"
+                                        id="" aria-hidden="true" tabindex="-1" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/sp2-nhieu-thong-so"
+                                                    tabindex="-1">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175011002555dabanh.png"
+                                                        alt="SP2 nhiều thông số">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('370');" tabindex="-1"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('370');" tabindex="-1"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/sp2-nhieu-thong-so'"
+                                                        tabindex="-1"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/sp2-nhieu-thong-so"
+                                                            tabindex="-1">SP2 nhiều thông số</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="-1">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('SP2 nhiều thông số', 'images/product/175011002555dabanh.png')"
+                                                            tabindex="-1"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide" data-slick-index="0"
+                                        aria-hidden="true" tabindex="-1" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-99k/dong-ho-nam-day-da-mau-trang-tre-trung-thanh-lich-99k"
+                                                    tabindex="-1">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175169977526KA trang nam.jpg"
+                                                        alt="Đồng hồ Nam dây da màu Trắng trẻ trung thanh lịch 99k">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('378');" tabindex="-1"
+                                                        fdprocessedid="d4801"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('378');" tabindex="-1"
+                                                        fdprocessedid="gtlo9"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-99k/dong-ho-nam-day-da-mau-trang-tre-trung-thanh-lich-99k'"
+                                                        tabindex="-1" fdprocessedid="fqfote"><i
+                                                            class="fa-solid fa-eye"></i><span class="sub text-12">Xem
+                                                            chi
+                                                            tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-99k/dong-ho-nam-day-da-mau-trang-tre-trung-thanh-lich-99k"
+                                                            tabindex="-1">Đồng hồ Nam dây da màu Trắng trẻ trung thanh
+                                                            lịch
+                                                            99k</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-meta text-center">
+                                                        <span class="product-price product-sale-price">180.000
+                                                            <sup>đ</sup></span>
+                                                        <span class="product-price font-bold">99.000 <sup>đ</sup></span>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="-1" fdprocessedid="oqum">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Đồng hồ Nam dây da màu Trắng trẻ trung thanh lịch 99k', 'images/product/175169977526KA trang nam.jpg')"
+                                                            tabindex="-1" fdprocessedid="7o556k"> <i
+                                                                class="fa-solid fa-headset mr-4px"></i>Yêu cầu tư
+                                                            vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide" data-slick-index="2"
+                                        aria-hidden="true" tabindex="-1" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-99k/dong-ho-nam-day-da-nau-99k"
+                                                    tabindex="-1">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175169960726KA nau nam.jpg"
+                                                        alt="Đồng hồ Nam dây da nâu 99k">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('377');" tabindex="-1"
+                                                        fdprocessedid="kt1t5e"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('377');" tabindex="-1"
+                                                        fdprocessedid="q6e5jr"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-99k/dong-ho-nam-day-da-nau-99k'"
+                                                        tabindex="-1" fdprocessedid="21o9q"><i
+                                                            class="fa-solid fa-eye"></i><span class="sub text-12">Xem
+                                                            chi
+                                                            tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-99k/dong-ho-nam-day-da-nau-99k"
+                                                            tabindex="-1">Đồng hồ Nam dây da nâu 99k</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-meta text-center">
+                                                        <span class="product-price product-sale-price">180.000
+                                                            <sup>đ</sup></span>
+                                                        <span class="product-price font-bold">99.000 <sup>đ</sup></span>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="-1" fdprocessedid="ncwxgd">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Đồng hồ Nam dây da nâu 99k', 'images/product/175169960726KA nau nam.jpg')"
+                                                            tabindex="-1" fdprocessedid="iz8tsa"> <i
+                                                                class="fa-solid fa-headset mr-4px"></i>Yêu cầu tư
+                                                            vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide" data-slick-index="3"
+                                        aria-hidden="true" tabindex="-1" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nu/dong-ho-nu-day-demi-sang-trong"
+                                                    tabindex="-1">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175170064719SKG-299DT.jpg"
+                                                        alt="Đồng Hồ Nữ Dây Demi Sang Trọng">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('382');" tabindex="-1"
+                                                        fdprocessedid="gbncq"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('382');" tabindex="-1"
+                                                        fdprocessedid="1gin9w"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nu/dong-ho-nu-day-demi-sang-trong'"
+                                                        tabindex="-1" fdprocessedid="0l22a"><i
+                                                            class="fa-solid fa-eye"></i><span class="sub text-12">Xem
+                                                            chi
+                                                            tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nu/dong-ho-nu-day-demi-sang-trong"
+                                                            tabindex="-1">Đồng Hồ Nữ Dây Demi Sang Trọng</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-meta text-center">
+                                                        <span class="product-price product-sale-price">350.000
+                                                            <sup>đ</sup></span>
+                                                        <span class="product-price font-bold">320.000
+                                                            <sup>đ</sup></span>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="-1" fdprocessedid="qfia0c">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Đồng Hồ Nữ Dây Demi Sang Trọng', 'images/product/175170064719SKG-299DT.jpg')"
+                                                            tabindex="-1" fdprocessedid="dfxgx"> <i
+                                                                class="fa-solid fa-headset mr-4px"></i>Yêu cầu tư
+                                                            vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide slick-current slick-active"
+                                        data-slick-index="4" aria-hidden="false" tabindex="0" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/quan-ao-size-so" tabindex="0">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/176820324661ALI-BN-MOBI1.jpg"
+                                                        alt="Quần áo size số">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('391');" tabindex="0"
+                                                        fdprocessedid="iib4r"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('391');" tabindex="0"
+                                                        fdprocessedid="qh47f"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/quan-ao-size-so'"
+                                                        tabindex="0" fdprocessedid="ymmgnm"><i
+                                                            class="fa-solid fa-eye"></i><span class="sub text-12">Xem
+                                                            chi
+                                                            tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/quan-ao-size-so"
+                                                            tabindex="0">Quần áo size số</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <span class="product-price product-sale-price">350.000
+                                                        <sup>đ</sup></span>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="0" fdprocessedid="18qr9i">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Quần áo size số', 'images/product/176820324661ALI-BN-MOBI1.jpg')"
+                                                            tabindex="0" fdprocessedid="59w9q"> <i
+                                                                class="fa-solid fa-headset mr-4px"></i>Yêu cầu tư
+                                                            vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide slick-active" data-slick-index="5"
+                                        aria-hidden="false" tabindex="0" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/dong-ho-nam-day-thep-lua-mau-vang"
+                                                    tabindex="0">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175170001057SK-398VX.jpg"
+                                                        alt="Đồng Hồ Nam Dây Thép Lụa Màu Vàng">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('381');" tabindex="0"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('381');" tabindex="0"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/dong-ho-nam-day-thep-lua-mau-vang'"
+                                                        tabindex="0"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/dong-ho-nam-day-thep-lua-mau-vang"
+                                                            tabindex="0">Đồng Hồ Nam Dây Thép Lụa Màu Vàng</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-meta text-center">
+                                                        <span class="product-price product-sale-price">350.000
+                                                            <sup>đ</sup></span>
+                                                        <span class="product-price font-bold">3.200.000
+                                                            <sup>đ</sup></span>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="0">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Đồng Hồ Nam Dây Thép Lụa Màu Vàng', 'images/product/175170001057SK-398VX.jpg')"
+                                                            tabindex="0"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide slick-active" data-slick-index="6"
+                                        aria-hidden="false" tabindex="0" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/dong-ho-nam-day-thep-lua"
+                                                    tabindex="0">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175169995439SK-290VT.jpg"
+                                                        alt="Đồng Hồ Nam Dây Thép Lụa">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('380');" tabindex="0"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('380');" tabindex="0"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/dong-ho-nam-day-thep-lua'"
+                                                        tabindex="0"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/dong-ho-nam-day-thep-lua"
+                                                            tabindex="0">Đồng Hồ Nam Dây Thép Lụa</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-meta text-center">
+                                                        <span class="product-price product-sale-price">350.000
+                                                            <sup>đ</sup></span>
+                                                        <span class="product-price font-bold">120.000
+                                                            <sup>đ</sup></span>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="0">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Đồng Hồ Nam Dây Thép Lụa', 'images/product/175169995439SK-290VT.jpg')"
+                                                            tabindex="0"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide slick-active" data-slick-index="7"
+                                        aria-hidden="false" tabindex="0" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/san-pham-an-check-sitemap-hien"
+                                                    tabindex="0">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/176057805818cách-bố-trí-phòng-ngủ-nhỏ-đẹp-đơn-giản-1.jpg"
+                                                        alt="Sản phẩm ẩn check sitemap">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('389');" tabindex="0"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('389');" tabindex="0"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/san-pham-an-check-sitemap-hien'"
+                                                        tabindex="0"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/san-pham-an-check-sitemap-hien"
+                                                            tabindex="0">Sản phẩm ẩn check sitemap</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <span class="product-price product-sale-price">350.000
+                                                        <sup>đ</sup></span>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="0">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Sản phẩm ẩn check sitemap', 'images/product/176057805818cách-bố-trí-phòng-ngủ-nhỏ-đẹp-đơn-giản-1.jpg')"
+                                                            tabindex="0"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide slick-active" data-slick-index="8"
+                                        aria-hidden="false" tabindex="0" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/san-pham/song-chan-rac-960x530-mm"
+                                                    tabindex="0">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/1746412640837 Song chắn rác 960x530 mm.png"
+                                                        alt="Song chắn rác 960x530 mm">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('359');" tabindex="0"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('359');" tabindex="0"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/san-pham/song-chan-rac-960x530-mm'"
+                                                        tabindex="0"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/san-pham/song-chan-rac-960x530-mm"
+                                                            tabindex="0">Song chắn rác 960x530 mm</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="0">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Song chắn rác 960x530 mm', 'images/product/1746412640837 Song chắn rác 960x530 mm.png')"
+                                                            tabindex="0"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide" data-slick-index="9"
+                                        aria-hidden="true" tabindex="-1" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/in-an-nhieu-thong-so"
+                                                    tabindex="-1">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/1757212563251-an-pham-tet.jpg"
+                                                        alt="In ấn nhiều thông số">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('384');" tabindex="-1"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('384');" tabindex="-1"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/in-an-nhieu-thong-so'"
+                                                        tabindex="-1"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/in-an-nhieu-thong-so"
+                                                            tabindex="-1">In ấn nhiều thông số</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="-1">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('In ấn nhiều thông số', 'images/product/1757212563251-an-pham-tet.jpg')"
+                                                            tabindex="-1"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_list item_frame slick-slide" data-slick-index="10"
+                                        aria-hidden="true" tabindex="-1" style="width: 192px;">
+                                        <div class="product is-sale header-boder-color">
+                                            <div class="inner p-2 rounded-3">
+                                                <a class="product-thumbnail"
+                                                    href="https://we1.io.vn/dong-ho-nam/san-pham-in-an-danh-thiep"
+                                                    tabindex="-1">
+                                                    <img class="rounded-3" loading="lazy" width="255" height="330"
+                                                        src="https://we1.io.vn/admin/public/images/product/175030183616CTV up bài.jpg"
+                                                        alt="Sản phẩm in ấn Danh thiếp">
+                                                </a>
+                                                <div
+                                                    class="list-action bg-primary text-white flex text-16 sm:flex-col sm:text-12">
+                                                    <button class="btn-action w-32 h-36 btn-addToCart"
+                                                        onclick="javascript:addProductToCart('371');" tabindex="-1"> <i
+                                                            class="fa-solid fa-cart-plus"></i><span
+                                                            class="sub text-12">Thêm
+                                                            vào giỏ</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:buyProductNow('371');" tabindex="-1"><i
+                                                            class="fa-solid fa-money-check-dollar"></i><span
+                                                            class="sub text-12">Mua ngay</span></button>
+                                                    <button class="btn-action w-32 h-36"
+                                                        onclick="javascript:window.location.href='https://we1.io.vn/dong-ho-nam/san-pham-in-an-danh-thiep'"
+                                                        tabindex="-1"><i class="fa-solid fa-eye"></i><span
+                                                            class="sub text-12">Xem chi tiết</span></button>
+                                                </div>
+                                                <div class="inner-prod">
+                                                    <h3 class="product-title font-bold">
+                                                        <a href="https://we1.io.vn/dong-ho-nam/san-pham-in-an-danh-thiep"
+                                                            tabindex="-1">Sản phẩm in ấn Danh thiếp</a>
+                                                    </h3>
+                                                    <div class="product-rate flex text-12">
+                                                        <ul>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="group-button flex mt-8px gap-x-1 gap-y-4px flex-col max-sm:flex-col">
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-primary text-14 rounded-4 hover:bg-primary hover:text-white"
+                                                            tabindex="-1">
+                                                            <i class="fa-solid fa-phone mr-4px"></i>
+                                                            0847 865 568
+                                                        </button>
+                                                        <button
+                                                            class="btn-product p-4px bg-gray2 text-orange text-14 rounded-4 hover:bg-orange hover:text-white"
+                                                            onclick="yeuCauTuVan('Sản phẩm in ấn Danh thiếp', 'images/product/175030183616CTV up bài.jpg')"
+                                                            tabindex="-1"> <i class="fa-solid fa-headset mr-4px"></i>Yêu
+                                                            cầu
+                                                            tư vấn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="slick-next slick-arrow" aria-label="Next" type="button" style=""
+                                fdprocessedid="tk3dok">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="public/assets/js/jquery.min.js"></script>
+        <script src="public/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        <script src="public/assets/js/slick.min.js"></script>
+        <script src="public/assets/js/slick-lightbox.js"></script>
+        <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <!-- validate js-->
+        <script src="public/assets/js/jquery.validate.min.js"></script>
+        <script src="public/assets/js/additional-methods.min.js"></script>
+        <script src="public/js/home.js"></script>
+        <script src="public/js/home-custom.js"></script>
+        <script src="public/js/contact.js"></script>
+        <script src="public/js/quote_and_promotion.js"></script>
+        <script src="public/js/custom.js"></script>
+        <script src="public/js/product_detail.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Product List Carousels (BÀI NỐI BẬT & ĐỒNG HỒ THỜI TRANG)
+                $('.products-list-row1.slider-2').slick({
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    prevArrow: '.slick-prev',
+                    nextArrow: '.slick-next',
+                    responsive: [
+                        {
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 3
+                            }
+                        },
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 2
+                            }
+                        },
+                        {
+                            breakpoint: 576,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+
+                // Featured Articles Slider (Legacy)
+                $('.featured-slider').slick({
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    prevArrow: $('.featured-slider-wrapper .nav-prev'),
+                    nextArrow: $('.featured-slider-wrapper .nav-next'),
+                    responsive: [
+                        {
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 3
+                            }
+                        },
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 2
+                            }
+                        },
+                        {
+                            breakpoint: 576,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+
+</body>
+
+</html>
