@@ -17,6 +17,11 @@ ul.menu-f {
   margin-left: 0 !important;
 }
 
+ul.account-menu {
+  list-style: none !important;
+  margin-left: 0 !important;
+}
+
 @media (min-width: 481px) and (max-width: 768px) {
   p+ul {
     margin-left: 6%;
@@ -3131,4 +3136,120 @@ body:not(.header-sticky) .fe-header {
   border-radius: 50%;
   flex-shrink: 0;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+
+/* header - web 365 */
+h3.text-heading--notBold{
+  font-weight: 400 !important;
+}
+
+p.text-description{
+ font-weight: 600; 
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-col-1 {
+    width: 25%;
+    margin-right: 24px;
+}
+
+.header-col-2 {
+    width: 41.6667%;
+}
+
+.header-col-3 {
+    width: 33.3333%;
+}
+
+.account-hover {
+    position: relative;
+}
+
+.register.account-hover .icon{
+  position: relative;
+}
+
+.account-hover .account-menu {
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+    min-width: 150px;
+}
+
+.account-hover .account-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.account-hover .account-menu li button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.account-hover .account-menu li button:hover {
+    background: #f8f9fa;
+    color: #02096e;
+}
+
+.account-hover:hover .account-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Search column styling */
+.col-search {
+    width: 33.33%;
+    max-width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-search .form-inline{
+  margin-bottom: 0;
+}
+
+/* Header top outer columns */
+.header-logo {
+    width: 25%;
+}
+
+.header-main {
+    width: 75%;
+}
+
+Header .header-search .input-group-append>button{
+  height: 100%;
+}
+
+col.col-search{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  display: flex;
 }
