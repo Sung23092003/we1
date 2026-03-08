@@ -225,7 +225,7 @@ body:not(.header-sticky) .fe-header {
 
 }
 
-.header--v2 .header-search{
+.header--v2 .header-search {
   width: 100% !important;
 }
 
@@ -3309,6 +3309,17 @@ col.col-search {
 }
 
 /* related-posts-wrapper */
-.related-posts-wrapper{
+.related-posts-wrapper {
   margin-top: 30px;
+}
+
+.blog_list.blog_re {
+  margin-top: 50px !important;
+}
+
+.blog_list h2 a {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  margin-top: 0 !important;
+
 }
