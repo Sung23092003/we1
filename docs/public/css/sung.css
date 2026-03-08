@@ -2809,6 +2809,16 @@ body:not(.header-sticky) .fe-header {
   border-radius: 4px;
 }
 
+/* Fix sliders to display in 1 row only */
+.products-list-row1 .slick-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
+.products-list-row1 .slick-slide {
+  flex: 0 0 auto !important;
+}
+
 .footer-6 .icon-social {
   border-radius: 8px;
 }
