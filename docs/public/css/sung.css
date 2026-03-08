@@ -3267,7 +3267,6 @@ p.text-description {
   visibility: visible;
 }
 
-/* Search column styling */
 .col-search {
   width: 33.33%;
   max-width: 33.33%;
@@ -3309,3 +3308,7 @@ col.col-search {
   width: 100%;
 }
 
+/* related-posts-wrapper */
+.related-posts-wrapper{
+  margin-top: 30px;
+}
