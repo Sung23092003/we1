@@ -199,6 +199,36 @@ body:not(.header-sticky) .fe-header {
   cursor: pointer;
 }
 
+/* CSS cho count giỏ hàng */
+.header-icons .icon {
+  position: relative;
+}
+
+.header-icons .count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.header--v2 .header-icons .icon {
+  color: black !important;
+
+}
+
+.header--v2 .header-search{
+  width: 100% !important;
+}
+
 .link_chat_social img {
   position: relative;
   z-index: 2;
@@ -1471,6 +1501,22 @@ body:not(.header-sticky) .fe-header {
 
 .card-label {
   font-size: 14px;
+}
+
+/* CSS cho header top container */
+.thietkeweb365-header-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (min-width: 1400px) {
+  .thietkeweb365-header-container {
+    max-width: 1400px;
+  }
 }
 
 .section-title {
@@ -3239,6 +3285,11 @@ p.text-description {
   width: 25%;
 }
 
+.header-bottom .header-logo {
+  width: 214px
+}
+
+
 .header-main {
   width: 75%;
 }
@@ -3258,11 +3309,3 @@ col.col-search {
   width: 100%;
 }
 
-.header--v2.header-background-text-color {
-  background-color: #02096e !important;
-  color: #ffffff !important;
-}
-
-.header--v2.header-boder-color {
-  border-color: #02096e !important;
-}
