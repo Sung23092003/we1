@@ -7,20 +7,15 @@ h5+ul {
   margin-left: 4%;
 }
 
-ul.list-social {
+ul.list-social,
+ul.account-menu,
+ul.menu-f,
+.footer-3 ul,
+.footer-6 ul {
   list-style: none !important;
   margin-left: 0 !important;
 }
 
-ul.menu-f {
-  list-style: none !important;
-  margin-left: 0 !important;
-}
-
-ul.account-menu {
-  list-style: none !important;
-  margin-left: 0 !important;
-}
 
 @media (min-width: 481px) and (max-width: 768px) {
   p+ul {
@@ -3181,6 +3176,7 @@ body:not(.header-sticky) .fe-header {
 
 .service-list a:hover {
   padding-left: 6px;
+  font-size: 14px !important;
   color: #fff;
 }
 
@@ -3333,3 +3329,38 @@ col.col-search {
   margin-top: 0 !important;
 
 }
+
+/* footer */
+.footer-2 .icon-social:hover, 
+.footer-3 .icon-social:hover,
+.footer-4 .icon-social:hover,
+.footer-5 .icon-social:hover,
+.footer-6 .icon-social:hover {
+  scale: 1.2;
+}
+
+.footer-2 a:hover,
+.footer-3 a:hover,
+.footer-4 a:hover,
+.footer-5 a:hover,
+.footer-6 a:hover {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer-2 .icon-social,
+.footer-3 .icon-social,
+.footer-4 .icon-social,
+.footer-5 .icon-social,
+.footer-6 .icon-social,
+.footer-2 a,
+.footer-3 a,
+.footer-4 a,
+.footer-5 a,
+.footer-6 a {
+  transition: all 0.3s ease;
+}
+
+/* .payment-accept img:hover {
+  scale: 1.2;
+  opacity: 0.8;
+} */
