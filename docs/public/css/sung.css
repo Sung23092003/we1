@@ -400,6 +400,295 @@ body:not(.header-sticky) .fe-header {
   display: flex;
 }
 
+/* =========================
+   Footer grid (custom, no Bootstrap)
+   ========================= */
+@media (max-width: 1400px) {
+
+  .footer-2 .container,
+  .footer-3 .container,
+  .footer-4 .container,
+  .footer-5 .container,
+  .footer-6 .container {
+    max-width: 1400px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .footer-2 .container,
+  .footer-3 .container,
+  .footer-4 .container,
+  .footer-5 .container,
+  .footer-6 .container {
+    max-width: 1140px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .footer-2 .container,
+  .footer-3 .container,
+  .footer-4 .container,
+  .footer-5 .container,
+  .footer-6 .container {
+    max-width: 960px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer-2 .container,
+  .footer-3 .container,
+  .footer-4 .container,
+  .footer-5 .container,
+  .footer-6 .container {
+    max-width: 720px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .footer-2 .container,
+  .footer-3 .container,
+  .footer-4 .container,
+  .footer-5 .container,
+  .footer-6 .container {
+    max-width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+.footer-2 .container,
+.footer-3 .container,
+.footer-4 .container,
+.footer-5 .container,
+.footer-6 .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-2 .row,
+.footer-3 .row,
+.footer-4 .row,
+.footer-5 .row,
+.footer-6 .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-2 [class*="col-"],
+.footer-3 [class*="col-"],
+.footer-4 [class*="col-"],
+.footer-5 [class*="col-"],
+.footer-6 [class*="col-"] {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+
+/* XS widths (mobile-first) */
+.footer-2 .col-12,
+.footer-3 .col-12,
+.footer-4 .col-12,
+.footer-5 .col-12,
+.footer-6 .col-12 {
+  width: 100%;
+}
+
+.footer-2 .col-8,
+.footer-3 .col-8,
+.footer-4 .col-8,
+.footer-5 .col-8,
+.footer-6 .col-8 {
+  width: 66.6667%;
+}
+
+.footer-2 .col-7,
+.footer-3 .col-7,
+.footer-4 .col-7,
+.footer-5 .col-7,
+.footer-6 .col-7 {
+  width: 58.3333%;
+}
+
+.footer-2 .col-6,
+.footer-3 .col-6,
+.footer-4 .col-6,
+.footer-5 .col-6,
+.footer-6 .col-6 {
+  width: 50%;
+}
+
+.footer-2 .col-5,
+.footer-3 .col-5,
+.footer-4 .col-5,
+.footer-5 .col-5,
+.footer-6 .col-5 {
+  width: 41.6667%;
+}
+
+.footer-2 .col-4,
+.footer-3 .col-4,
+.footer-4 .col-4,
+.footer-5 .col-4,
+.footer-6 .col-4 {
+  width: 33.3333%;
+}
+
+.footer-2 .col-3,
+.footer-3 .col-3,
+.footer-4 .col-3,
+.footer-5 .col-3,
+.footer-6 .col-3 {
+  width: 25%;
+}
+
+/* MD ≥ 768px */
+@media (min-width: 768px) {
+
+  .footer-2 .col-md-12,
+  .footer-3 .col-md-12,
+  .footer-4 .col-md-12,
+  .footer-5 .col-md-12,
+  .footer-6 .col-md-12 {
+    width: 100%;
+  }
+
+  .footer-2 .col-md-4,
+  .footer-3 .col-md-4,
+  .footer-4 .col-md-4,
+  .footer-5 .col-md-4,
+  .footer-6 .col-md-4 {
+    width: 33.3333%;
+  }
+}
+
+/* LG ≥ 992px */
+@media (min-width: 992px) {
+
+  .footer-2 .col-lg-12,
+  .footer-3 .col-lg-12,
+  .footer-4 .col-lg-12,
+  .footer-5 .col-lg-12,
+  .footer-6 .col-lg-12 {
+    width: 100%;
+  }
+
+  .footer-2 .col-lg-6,
+  .footer-3 .col-lg-6,
+  .footer-4 .col-lg-6,
+  .footer-5 .col-lg-6,
+  .footer-6 .col-lg-6 {
+    width: 50%;
+  }
+
+  .footer-2 .col-lg-5,
+  .footer-3 .col-lg-5,
+  .footer-4 .col-lg-5,
+  .footer-5 .col-lg-5,
+  .footer-6 .col-lg-5 {
+    width: 41.6667%;
+  }
+}
+
+/* XL ≥ 1200px */
+@media (min-width: 1200px) {
+
+  .footer-2 .col-xl-8,
+  .footer-3 .col-xl-8,
+  .footer-4 .col-xl-8,
+  .footer-5 .col-xl-8,
+  .footer-6 .col-xl-8 {
+    width: 66.6667%;
+  }
+
+  .footer-2 .col-xl-7,
+  .footer-3 .col-xl-7,
+  .footer-4 .col-xl-7,
+  .footer-5 .col-xl-7,
+  .footer-6 .col-xl-7 {
+    width: 58.3333%;
+  }
+
+  .footer-2 .col-xl-6,
+  .footer-3 .col-xl-6,
+  .footer-4 .col-xl-6,
+  .footer-5 .col-xl-6,
+  .footer-6 .col-xl-6 {
+    width: 50%;
+  }
+
+  .footer-2 .col-xl-5,
+  .footer-3 .col-xl-5,
+  .footer-4 .col-xl-5,
+  .footer-5 .col-xl-5,
+  .footer-6 .col-xl-5 {
+    width: 41.6667%;
+  }
+
+  .footer-2 .col-xl-4,
+  .footer-3 .col-xl-4,
+  .footer-4 .col-xl-4,
+  .footer-5 .col-xl-4,
+  .footer-6 .col-xl-4 {
+    width: 33.3333%;
+  }
+
+  .footer-2 .col-xl-3,
+  .footer-3 .col-xl-3,
+  .footer-4 .col-xl-3,
+  .footer-5 .col-xl-3,
+  .footer-6 .col-xl-3 {
+    width: 25%;
+  }
+}
+
+/* Extra mapping for footer-3 & footer-6 specific markup */
+.footer-3 .row,
+.footer-6 .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Support non-standard col-sx-* used in footers */
+@media (min-width: 576px) {
+
+  .footer-3 .col-sx-8,
+  .footer-6 .col-sx-8 {
+    width: 66.6667%;
+  }
+
+  .footer-3 .col-sx-4,
+  .footer-6 .col-sx-4 {
+    width: 33.3333%;
+  }
+}
+
+/* Equal columns inside form rows */
+.footer-3 .row .col,
+.footer-6 .row .col {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (max-width: 575.98px) {
+
+  .footer-3 .row .col,
+  .footer-6 .row .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 .filter-banner img {
   width: 100%;
   height: 100%;
@@ -3331,7 +3620,7 @@ col.col-search {
 }
 
 /* footer */
-.footer-2 .icon-social:hover, 
+.footer-2 .icon-social:hover,
 .footer-3 .icon-social:hover,
 .footer-4 .icon-social:hover,
 .footer-5 .icon-social:hover,
@@ -3347,6 +3636,7 @@ col.col-search {
   font-size: 16px;
   font-weight: 700;
 }
+
 .footer-2 .icon-social,
 .footer-3 .icon-social,
 .footer-4 .icon-social,
