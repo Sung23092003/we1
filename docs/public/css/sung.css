@@ -403,6 +403,22 @@ body:not(.header-sticky) .fe-header {
 /* =========================
    Footer grid (custom, no Bootstrap)
    ========================= */
+/* Overlay stack common */
+.footer-3, .footer-4, .footer-5, .footer-6 { position: relative; overflow: hidden; }
+.footer-3 .bg-img, .footer-4 .bg-img, .footer-5 .bg-img, .footer-6 .bg-img { position: absolute; inset: 0; z-index: 0; }
+.footer-3 .bg-img img, .footer-6 .bg-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.footer-3 .bg-overlay, .footer-4 .bg-overlay, .footer-5 .bg-overlay, .footer-6 .bg-overlay { position: absolute; inset: 0; z-index: 1; background: rgba(0,0,0,var(--footer-overlay, 0.5)); pointer-events: none; }
+.footer-3 .container, .footer-4 .container, .footer-5 .container, .footer-6 .container { position: relative; z-index: 2; }
+/* Đảm bảo address nằm trên overlay */
+.footer-3 address, .footer-4 address, .footer-5 address, .footer-6 address {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 8px 12px;
+}
+
 @media (max-width: 1400px) {
 
   .footer-2 .container,
