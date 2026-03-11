@@ -3666,6 +3666,10 @@ col.col-search {
   transition: all 0.3s ease;
 }
 
+.text-right-button{
+  text-align: right;
+}
+
 /* .payment-accept img:hover {
   scale: 1.2;
   opacity: 0.8;
