@@ -11,7 +11,8 @@ ul.list-social,
 ul.account-menu,
 ul.menu-f,
 .footer-3 ul,
-.footer-6 ul {
+.footer-6 ul,
+h3.product-info-ttl+ul{
   list-style: none !important;
   margin-left: 0 !important;
 }
@@ -3666,6 +3667,14 @@ col.col-search {
   transition: all 0.3s ease;
 }
 
+.footer-2 .icon-social,
+.footer-3 .icon-social,
+.footer-4 .icon-social,
+.footer-5 .icon-social,
+.footer-6 .icon-social{
+  border-radius: 8px;
+}
+
 .text-right-button{
   text-align: right;
 }
@@ -3674,3 +3683,98 @@ col.col-search {
   scale: 1.2;
   opacity: 0.8;
 } */
+
+/* khung logo */
+.partner{
+text-align:center;
+padding:40px 0;
+background-color: #fff;
+}
+
+.partner__track{
+cursor:default;
+user-select:none;
+touch-action:pan-y;
+}
+
+.partner__title{
+margin-bottom:30px;
+font-size:22px;
+}
+
+.partner__slider{
+overflow:hidden;
+position:relative;
+max-width:1200px;
+margin:auto;
+}
+
+.partner__track{
+display:flex;
+transition:transform .5s ease;
+}
+
+.partner__item{
+padding:10px;
+box-sizing:border-box;
+}
+
+.partner__item a,
+.partner__item img{
+pointer-events:auto;
+cursor:pointer;
+}
+
+.partner__item img{
+width:100%;
+max-width:150px;
+max-height:150px;
+object-fit:contain;
+transition:.3s;
+}
+
+/* dots */
+
+.partner__dots{
+text-align:center;
+margin-top:15px;
+}
+
+.partner__dot{
+width:14px;
+height:14px;
+background:#000;
+display:inline-block;
+border-radius:50%;
+margin:5px;
+cursor:pointer;
+opacity:.4;
+}
+
+.partner__dot.active{
+background:red;
+opacity:1;
+}
+
+
+/* responsive */
+
+@media(max-width:1024px){
+
+.partner__slider[data-show="6"] .partner__item{
+flex:0 0 calc(100%/4);
+}
+
+.partner__slider[data-show="4"] .partner__item{
+flex:0 0 calc(100%/3);
+}
+
+}
+
+@media(max-width:600px){
+
+.partner__item{
+flex:0 0 calc(100%/2);
+}
+
+}
