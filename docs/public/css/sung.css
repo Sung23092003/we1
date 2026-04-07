@@ -3865,24 +3865,6 @@ col.col-search {
   position: relative;
 }
 
-.sv-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  padding: 24px;
-
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-
-  z-index: 999;
-}
-
 .sv-menu:hover .sv-dropdown {
   opacity: 1;
   visibility: visible;
@@ -3890,16 +3872,20 @@ col.col-search {
 }
 
 .sv-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-
   gap: 12px 28px;
+  position: absolute;
+  top: 100%;
 
+  left: 50% !important;
+  transform: translateX(-50%); 
   list-style: none;
-  padding: 0;
   margin: 0;
 
-  align-items: start;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  padding: 24px;
 }
 
 .sv-item {
@@ -3926,10 +3912,6 @@ col.col-search {
   background: #eee;
 }
 
-.sv-item:nth-last-child(-n+5)::after {
-  display: none;
-}
-
 .sv-item a {
   flex: 1;
 
@@ -3939,7 +3921,7 @@ col.col-search {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-
+  padding: 8px 16px !important;
   color: #333;
   text-decoration: none;
 
@@ -3947,6 +3929,7 @@ col.col-search {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 
 .btn-submenu {
   flex-shrink: 0;
@@ -3970,13 +3953,7 @@ col.col-search {
   transition: all 0.25s ease;
 }
 
-
-.sv-item:hover {
-  background: #f5f5f5;
-  padding-left: 16px;
-}
-
-.sv-item:hover a {
+.sv-item:hover > a {
   color: #007bff;
 }
 
@@ -3987,16 +3964,6 @@ col.col-search {
 
 
 @media (max-width: 992px) {
-  .sv-dropdown {
-    position: static;
-    transform: none;
-    width: 100%;
-    box-shadow: none;
-    padding: 12px 0;
-    opacity: 1;
-    visibility: visible;
-  }
-
   .sv-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4015,4 +3982,29 @@ li.nav-item.sv-menu:hover {
 
 .header-3 .bg {
   height: 100% !important;
+}
+
+.sv-grid.one-col {
+
+}
+
+.sv-grid.multi-col {
+  display: grid !important;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(6, auto);
+}
+
+/* submenu cấp 2 */
+.sv-item > .nav-submenu {
+  position: absolute;
+  top: 0;
+  left: -30% !important; 
+
+}
+
+/* hover thì hiện */
+.sv-item:hover > .nav-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
