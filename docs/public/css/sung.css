@@ -4004,8 +4004,10 @@ li.nav-item.sv-menu:hover {
 .one-col .sv-item > .nav-submenu {
   position: absolute;
   top: 0;
+  left: 100% !important;
   min-width: 270px;
   white-space: nowrap;
+  transform: none !important;
 }
 
 /* hover thì hiện */
