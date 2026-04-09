@@ -3995,11 +3995,10 @@ li.nav-item.sv-menu:hover {
 }
 
 /* submenu cấp 2 */
-.sv-item > .nav-submenu {
+.multi-col .sv-item > .nav-submenu {
   position: absolute;
   top: 0;
   left: -30% !important; 
-
 }
 
 /* hover thì hiện */
