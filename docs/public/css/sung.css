@@ -3877,7 +3877,7 @@ col.col-search {
   top: 100%;
 
   left: 50% !important;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   list-style: none;
   margin: 0;
 
@@ -3886,6 +3886,10 @@ col.col-search {
   border-radius: 12px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   padding: 24px;
+}
+
+.grid-many-cols.sv-grid {
+  grid-template-rows: repeat(10, auto) !important;
 }
 
 .sv-item {
@@ -3953,7 +3957,7 @@ col.col-search {
   transition: all 0.25s ease;
 }
 
-.sv-item:hover > a {
+.sv-item:hover>a {
   color: #007bff;
 }
 
@@ -3984,9 +3988,7 @@ li.nav-item.sv-menu:hover {
   height: 100% !important;
 }
 
-.sv-grid.one-col {
-
-}
+.sv-grid.one-col {}
 
 .sv-grid.multi-col {
   display: grid !important;
@@ -3995,15 +3997,15 @@ li.nav-item.sv-menu:hover {
 }
 
 /* submenu cấp 2 */
-.sv-item > .nav-submenu {
+.sv-item>.nav-submenu {
   position: absolute;
   top: 0;
-  left: -30% !important; 
+  left: -30% !important;
 
 }
 
 /* hover thì hiện */
-.sv-item:hover > .nav-submenu {
+.sv-item:hover>.nav-submenu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
