@@ -3892,6 +3892,10 @@ col.col-search {
   grid-template-rows: repeat(10, auto) !important;
 }
 
+.grid-many-cols.sv-grid li a {
+  padding: 6px 12px !important;
+}
+
 .sv-item {
   position: relative;
 
@@ -3997,11 +4001,19 @@ li.nav-item.sv-menu:hover {
 }
 
 /* submenu cấp 2 */
-.sv-item>.nav-submenu {
+.multi-col .sv-item > .nav-submenu {
   position: absolute;
   top: 0;
-  left: -30% !important;
+  left: -30% !important; 
+}
 
+.one-col .sv-item > .nav-submenu {
+  position: absolute;
+  top: 0;
+  left: 100% !important;
+  min-width: 270px;
+  white-space: nowrap;
+  transform: none !important;
 }
 
 /* hover thì hiện */
