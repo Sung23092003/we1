@@ -89,6 +89,9 @@ main {
 /* end : fix nav hover hụt */
 
 /* header */
+.fe-header .header-bottom .sub-menu.sub-menu-list .menu-list li:not(:first-child) {
+  padding-left: 2rem !important;
+}
 
 .header-bottom-2 {
   z-index: auto !important;

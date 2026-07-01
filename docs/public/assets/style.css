@@ -37,7 +37,7 @@
 }
 
 main {
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body {
@@ -311,15 +311,18 @@ body {
         width: calc(25% - 1rem);
     }
 }
+
 @media(min-width:991px) {
     .menu-item.has-sub-menu:hover::before {
         display: block !important;
     }
+
     .fe-header .sub-menu-item li:first-child,
-.fe-header .sub-menu-item li:first-child a {
-    font-weight: bold !important;
+    .fe-header .sub-menu-item li:first-child a {
+        font-weight: bold !important;
+    }
 }
-}
+
 @media(min-width:1024px) {
     .fe-header .header-bottom .sub-menu.sub-menu-list .sub-menu-item {
         width: calc(33% - 1rem);
@@ -501,36 +504,36 @@ a {
 }
 
 .category-item {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%; 
-  border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    border-radius: 8px;
 }
 
 .category-item img {
-  width: 100%;
-  height: 150px; 
-  object-fit: cover;
-  border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .category-text {
-  display: flex;
-  align-items: center;  
-  justify-content: center;
-  width: 100%;
-  padding: 5px; 
-  text-align: center;
-  height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    height: auto;
 }
 
 
 .category-text a {
-  font-size: 0.875rem; 
-  color: #000;
-  text-decoration: none;
+    font-size: 0.875rem;
+    color: #000;
+    text-decoration: none;
 }
 
 .slick-slide {
@@ -588,7 +591,7 @@ a {
         width: 80px;
         height: 80px;
     }
-    
+
     .fe-header .menu-link,
     .fe-header .offcanvas .foo_mid,
     .fe-header .offcanvas .sub-menu-item li {
@@ -953,7 +956,7 @@ a {
 }
 
 
-.fe-header .modal-backdrop.show::before{
+.fe-header .modal-backdrop.show::before {
     content: '';
     position: absolute;
     top: 1rem;
@@ -966,7 +969,7 @@ a {
     background-image: url("data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMwMDAwMDAiPgoNPGcgaWQ9IlNWR1JlcG9fYmdDYXJyaWVyIiBzdHJva2Utd2lkdGg9IjAiLz4KDTxnIGlkPSJTVkdSZXBvX3RyYWNlckNhcnJpZXIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoNPGcgaWQ9IlNWR1JlcG9faWNvbkNhcnJpZXIiPgoNPHBhdGggZmlsbD0iI2ZmMDAwMCIgZD0iTTE5NS4yIDE5NS4yYTY0IDY0IDAgMCAxIDkwLjQ5NiAwTDUxMiA0MjEuNTA0IDczOC4zMDQgMTk1LjJhNjQgNjQgMCAwIDEgOTAuNDk2IDkwLjQ5Nkw2MDIuNDk2IDUxMiA4MjguOCA3MzguMzA0YTY0IDY0IDAgMCAxLTkwLjQ5NiA5MC40OTZMNTEyIDYwMi40OTYgMjg1LjY5NiA4MjguOGE2NCA2NCAwIDAgMS05MC40OTYtOTAuNDk2TDQyMS41MDQgNTEyIDE5NS4yIDI4NS42OTZhNjQgNjQgMCAwIDEgMC05MC40OTZ6Ii8+Cg08L2c+Cg08L3N2Zz4=") !important;
 }
 
-.fe-header .modal-backdrop.show{
+.fe-header .modal-backdrop.show {
     opacity: 1;
     background-color: #00000080;
 }
@@ -1175,6 +1178,7 @@ a {
 .slick-slider .slick-prev {
     left: 8px;
 }
+
 /* 
 .row>* {
     padding-left:  0 !important;
@@ -1426,23 +1430,26 @@ button.slick-arrow.slick-disabled {
     padding: 15px 0;
 }
 
-.fe-header .header-bottom-2  {
+.fe-header .header-bottom-2 {
     background-color: var(--background-color-main);
     box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.7);
 }
 
-.fe-header .header-bottom-2 >.container>.row {
+.fe-header .header-bottom-2>.container>.row {
     height: 60px;
 }
+
 .fe-header .header-bottom-2 .header-search {
     display: none;
 }
+
 .fe-header .header-bottom-2 .header-search.active {
     display: block;
 }
+
 .fe-header .header-bottom-2 .header-search .input-group {
     width: 100%;
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -1452,23 +1459,25 @@ button.slick-arrow.slick-disabled {
     width: 80%;
 }
 
-.fe-header .header-bottom-2  .navbar-light> a, .fe-header .header-bottom-2  .navbar-light .navbar-nav > a {
+.fe-header .header-bottom-2 .navbar-light>a,
+.fe-header .header-bottom-2 .navbar-light .navbar-nav>a {
     color: #FFF;
     font-family: sans-serif;
     font-size: 16px;
 }
 
-.fe-header .header-bottom-2  .navbar-light .dropdown-menu a, .fe-header .header-bottom-2  .navbar-light .navbar-nav .dropdown-menu a {
+.fe-header .header-bottom-2 .navbar-light .dropdown-menu a,
+.fe-header .header-bottom-2 .navbar-light .navbar-nav .dropdown-menu a {
     color: #FFF;
     font-weight: 400;
     font-family: sans-serif;
 }
 
-.fe-header .header-bottom-2  .navbar-light .navbar-nav .dropdown-menu a {
+.fe-header .header-bottom-2 .navbar-light .navbar-nav .dropdown-menu a {
     color: #212529;
 }
 
-.fe-header .header-bottom-2 >.container>.navbar {
+.fe-header .header-bottom-2>.container>.navbar {
     padding: 0;
 }
 
@@ -1477,19 +1486,21 @@ button.slick-arrow.slick-disabled {
     color: #ffffff !important;
 } */
 
-.fe-header .header-bottom-2 .nav-item.dropdown:hover > .dropdown-menu {
+.fe-header .header-bottom-2 .nav-item.dropdown:hover>.dropdown-menu {
     display: block !important;
 }
 
 
 @media (max-width: 991px) {
-        .fe-header .header-bottom-2 .navbar-light a, .fe-header .header-bottom-2 .navbar-light .navbar-nav a {
-            color: rgba(0, 0, 0, .55) !important;
-        }
 
-        .navbar-collapse.show {
-            transform: translateX(0);
-        }
+    .fe-header .header-bottom-2 .navbar-light a,
+    .fe-header .header-bottom-2 .navbar-light .navbar-nav a {
+        color: rgba(0, 0, 0, .55) !important;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
 }
 
 .w-fit {
@@ -1499,6 +1510,7 @@ button.slick-arrow.slick-disabled {
 .text-red {
     color: #ff0000;
 }
+
 .navbar-light .navbar-nav a.nav-link {
     color: var(--textColor);
 }
@@ -1524,13 +1536,15 @@ button.slick-arrow.slick-disabled {
     object-fit: cover;
     aspect-ratio: 4/3;
 }
+
 /* Box info container */
 .aboutus .box-info {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    max-height: 40px; /* Initially hidden */
+    max-height: 40px;
+    /* Initially hidden */
     background-color: rgba(2, 47, 102, .6);
     color: white;
     overflow: hidden;
@@ -1540,7 +1554,8 @@ button.slick-arrow.slick-disabled {
 
 /* On hover, expand the box-info and make it visible */
 .aboutus .item:hover .box-info {
-    max-height: 400px; /* Arbitrary large value, adjust as necessary */
+    max-height: 400px;
+    /* Arbitrary large value, adjust as necessary */
     opacity: 1;
 }
 
@@ -1552,7 +1567,8 @@ button.slick-arrow.slick-disabled {
 
 /* Box description */
 .aboutus .box-desc {
-    max-height: 0; /* Initially collapsed */
+    max-height: 0;
+    /* Initially collapsed */
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
@@ -1563,7 +1579,8 @@ button.slick-arrow.slick-disabled {
 
 /* On hover, expand description and make it visible */
 .aboutus .item:hover .box-desc {
-    max-height: 500px; /* Arbitrary max-height, adjust to your content */
+    max-height: 500px;
+    /* Arbitrary max-height, adjust to your content */
     opacity: 1;
     visibility: visible;
     padding-top: 10px;
@@ -1581,7 +1598,8 @@ button.slick-arrow.slick-disabled {
 
 
 /* Button Styles */
-.aboutus button, .section-custom button {
+.aboutus button,
+.section-custom button {
     margin: 0 8px;
 }
 
@@ -1632,7 +1650,8 @@ button.slick-arrow.slick-disabled {
     overflow: hidden;
 }
 
-.outstanding, .outstanding img {
+.outstanding,
+.outstanding img {
     height: 100%;
 }
 
@@ -1647,9 +1666,11 @@ button.slick-arrow.slick-disabled {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 0;
 }
+
 /* Initial state of the paragraph */
 .outstanding .info p {
-    max-height: 0; /* Start with a limited height */
+    max-height: 0;
+    /* Start with a limited height */
     opacity: 0;
     overflow: hidden;
     color: white;
@@ -1658,7 +1679,8 @@ button.slick-arrow.slick-disabled {
 
 /* Hover state - transition the max-height and opacity */
 .outstanding:hover .info p {
-    max-height: 500px; /* Or any value large enough to contain the content */
+    max-height: 500px;
+    /* Or any value large enough to contain the content */
     opacity: 1;
 }
 
@@ -1694,9 +1716,11 @@ button.slick-arrow.slick-disabled {
     font-size: 12px;
     display: block;
 }
+
 .mfp-zoom-out-cur {
     overflow: hidden;
 }
+
 .mfp-wrap {
     top: 0 !important;
     position: fixed !important;
