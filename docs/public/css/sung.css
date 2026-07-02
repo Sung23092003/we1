@@ -4027,11 +4027,23 @@ li.nav-item.sv-menu:hover {
 }
 
 /* single-menu-lists-grouped: gộp items không có menu cấp 3 vào 1 cột */
+.fe-header .header-bottom .sub-menu.sub-menu-list,
 .fe-header .header-bottom .sub-menu.sub-menu-list.single-menu-lists-grouped {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)) minmax(172px, 0.78fr);
-  grid-auto-rows: max-content;
-  align-items: start;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  width: max-content !important;
+  max-width: min(1180px, calc(100vw - 48px)) !important;
+  gap: 12px !important;
+  align-items: stretch !important;
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item {
+  width: 220px !important;
+  flex: 0 0 auto !important;
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item.sub-menu-item-short-stack {
+  width: 190px !important;
 }
 
 .fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack {
