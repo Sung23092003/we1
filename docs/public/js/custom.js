@@ -189,8 +189,35 @@ $(document).ready(function () {
     });
   }
 
+  function groupNavbarItemsWithoutLevel3() {
+    var $dropdowns = $('.header-bottom-2 .navbar-nav .dropdown-menu, .banner-nav .navbar-nav .dropdown-menu');
+
+    $dropdowns.each(function () {
+      var $menu = $(this);
+
+      if ($menu.hasClass('no-level3-grouped')) return;
+
+      var $withLevel3 = $menu.children('li').filter(function () {
+        return $(this).children('ul.dropdown-menu.submenu-level-2, ul.submenu-level-2').length > 0;
+      });
+
+      var $withoutLevel3 = $menu.children('li').filter(function () {
+        return $(this).children('ul.dropdown-menu.submenu-level-2, ul.submenu-level-2').length === 0;
+      });
+
+      if ($withLevel3.length === 0 || $withoutLevel3.length < 2) return;
+
+      $menu.addClass('no-level3-grouped');
+
+      var $column = $('<li class="nav-item no-level3-column"><ul class="list-unstyled mb-0"></ul></li>');
+      $withoutLevel3.detach().appendTo($column.children('ul'));
+      $menu.append($column);
+    });
+  }
+
   sortMenuByLevel3Count();
   groupSingleItemMenuLists();
+  groupNavbarItemsWithoutLevel3();
 });
 
 // =========================
