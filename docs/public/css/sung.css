@@ -4189,6 +4189,7 @@ li.nav-item.sv-menu:hover {
   font-weight: var(--fe-menu-font-weight, 600);
   white-space: normal;
   word-break: break-word;
+  min-width: 0;
 }
 
 .fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li.active a,
@@ -4226,6 +4227,7 @@ li.nav-item.sv-menu:hover {
   font-weight: var(--fe-menu-font-weight, 600);
   white-space: normal;
   word-break: break-word;
+  min-width: 0;
 }
 
 .fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column ul li:last-child,
@@ -4240,6 +4242,8 @@ li.nav-item.sv-menu:hover {
   color: inherit !important;
   background: transparent !important;
   width: 100%;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column ul li a.dropdown-item:hover,
