@@ -4184,14 +4184,11 @@ li.nav-item.sv-menu:hover {
   align-items: center;
   min-height: 39px;
   color: var(--fe-menu-text, var(--textColor)) !important;
-  background: var(--fe-menu-bg, #fff) !important;
+  background: var(--fe-menu-hover-bg, rgba(2, 130, 165, 0.08)) !important;
   border-bottom: 1px solid rgba(2, 130, 165, 0.1);
   font-weight: var(--fe-menu-font-weight, 600);
-}
-
-.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li.active,
-.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li.single-menu-item-active {
-  background: var(--fe-menu-hover-bg, rgba(2, 130, 165, 0.08)) !important;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li.active a,
@@ -4199,10 +4196,59 @@ li.nav-item.sv-menu:hover {
   color: #fff !important;
 }
 
-.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li:first-child:not(.active):not(.single-menu-item-active) {
-  color: var(--fe-menu-text, var(--textColor)) !important;
-}
-
 .fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li:last-child {
   border-bottom: 0;
+}
+
+/* no-level3-column: gộp items không có menu cấp 3 vào 1 cột trong navbar dropdown */
+.fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column,
+.banner-nav .navbar-nav .dropdown-menu > li.no-level3-column {
+  background: var(--fe-menu-bg, #fff);
+  border-color: rgba(2, 130, 165, 0.18);
+  box-shadow: inset 3px 0 0 rgba(2, 130, 165, 0.28);
+}
+
+.fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column ul,
+.banner-nav .navbar-nav .dropdown-menu > li.no-level3-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column ul li,
+.banner-nav .navbar-nav .dropdown-menu > li.no-level3-column ul li {
+  display: flex;
+  align-items: center;
+  min-height: 39px;
+  color: var(--fe-menu-text, var(--textColor)) !important;
+  background: var(--fe-menu-hover-bg, rgba(2, 130, 165, 0.08)) !important;
+  border-bottom: 1px solid rgba(2, 130, 165, 0.1);
+  font-weight: var(--fe-menu-font-weight, 600);
+  white-space: normal;
+  word-break: break-word;
+}
+
+.fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column ul li:last-child,
+.banner-nav .navbar-nav .dropdown-menu > li.no-level3-column ul li:last-child {
+  border-bottom: 0;
+}
+
+.fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column ul li a.dropdown-item,
+.banner-nav .navbar-nav .dropdown-menu > li.no-level3-column ul li a.dropdown-item {
+  font-weight: inherit;
+  padding: 0.5rem 1rem;
+  color: inherit !important;
+  background: transparent !important;
+  width: 100%;
+}
+
+.fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column ul li a.dropdown-item:hover,
+.banner-nav .navbar-nav .dropdown-menu > li.no-level3-column ul li a.dropdown-item:hover {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+.fe-header .header-bottom-2 .navbar-nav .dropdown-menu > li.no-level3-column ul li:hover,
+.banner-nav .navbar-nav .dropdown-menu > li.no-level3-column ul li:hover {
+  background: var(--fe-menu-hover-bg, rgba(2, 130, 165, 0.08)) !important;
 }
