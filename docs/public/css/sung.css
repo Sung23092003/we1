@@ -302,7 +302,7 @@ body:not(.header-sticky) .fe-header {
     left: 0 !important;
     right: auto !important;
     top: 100% !important;
-    margin-top: -4px !important;
+    margin-top: 2px !important;
     width: max-content !important;
     max-width: min(1000px, calc(100vw - 48px));
     margin-right: 0;
@@ -4282,7 +4282,7 @@ li.nav-item.sv-menu:hover {
 }
 .fe-header .header-bottom .sub-menu {
   top: 100% !important;
-  margin-top: -4px !important;
+  margin-top: 2px !important;
   transform: scale(1) !important;
   overflow: visible !important;
 }
