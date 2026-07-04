@@ -347,7 +347,7 @@ body:not(.header-sticky) .fe-header {
     padding: 0;
     border-right: 1px solid #eef3f5;
     min-height: 100%;
-    width: 230px;
+    width: 276px;
     flex: 0 0 auto;
   }
 
@@ -4285,5 +4285,28 @@ li.nav-item.sv-menu:hover {
   margin-top: 2px !important;
   transform: scale(1) !important;
   overflow: visible !important;
+}
+
+/* Mega menu columns: tăng width mỗi cột lên 20% */
+@media (min-width: 481px) {
+  .fe-header .header-bottom .sub-menu.sub-menu-list .sub-menu-item {
+    width: calc(60% - 1rem) !important;
+    min-width: 264px !important;
+  }
+}
+@media (min-width: 800px) {
+  .fe-header .header-bottom .sub-menu.sub-menu-list .sub-menu-item {
+    width: calc(30% - 1rem) !important;
+  }
+}
+@media (min-width: 1024px) {
+  .fe-header .header-bottom .sub-menu.sub-menu-list .sub-menu-item {
+    width: calc(40% - 1rem) !important;
+  }
+}
+@media (min-width: 1200px) {
+  .fe-header .header-bottom .sub-menu.sub-menu-list .sub-menu-item {
+    width: calc(24% - 1rem) !important;
+  }
 }
 
