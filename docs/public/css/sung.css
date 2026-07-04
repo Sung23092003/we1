@@ -4310,3 +4310,9 @@ li.nav-item.sv-menu:hover {
   }
 }
 
+/* Cursor pointer khi hover menu */
+.fe-header .header-bottom .menu-item,
+.fe-header .header-bottom-2 .navbar-nav>.nav-item {
+  cursor: pointer;
+}
+
