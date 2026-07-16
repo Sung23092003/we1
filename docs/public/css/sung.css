@@ -54,6 +54,7 @@ main {
 /* fix nav hover hụt */
 .menu-dropdown {
   position: relative;
+  cursor: pointer;
 }
 
 .nav-submenu {
@@ -73,7 +74,10 @@ main {
 
 /* end : fix nav hover hụt */
 
-/* Level 1 có con → mũi tên xuống */
+/* Level 1 có con → mũi tên xuống + cursor pointer */
+.menu-dropdown > .nav-link {
+  cursor: pointer;
+}
 .menu-dropdown > .nav-link::after {
   content: "\25BE";
   margin-left: 4px;
