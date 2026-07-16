@@ -155,6 +155,20 @@ $(document).ready(function () {
 
       $submenu.append($columns);
     });
+
+    // Cấp 2 (Header-3 Mega Menu Columns) - sorting left to right based on level 3 items
+    $('.header-3 .navbar-nav > .nav-item > .nav-submenu').each(function () {
+      var $submenu = $(this);
+      var $columns = $submenu.children('li');
+
+      $columns.sort(function (a, b) {
+        var countA = $(a).find('.nav-submenu > li').length;
+        var countB = $(b).find('.nav-submenu > li').length;
+        return countB - countA;
+      });
+
+      $submenu.append($columns);
+    });
   }
 
   function groupSingleItemMenuLists() {
@@ -190,7 +204,7 @@ $(document).ready(function () {
   }
 
   function groupNavbarItemsWithoutLevel3() {
-    var $dropdowns = $('.header-bottom-2 .navbar-nav .dropdown-menu, .banner-nav .navbar-nav .dropdown-menu');
+    var $dropdowns = $('.header-bottom-2 .navbar-nav .dropdown-menu, .banner-nav .navbar-nav .dropdown-menu, .header-3 .navbar-nav > .nav-item > .nav-submenu');
 
     $dropdowns.each(function () {
       var $menu = $(this);
@@ -198,11 +212,11 @@ $(document).ready(function () {
       if ($menu.hasClass('no-level3-grouped')) return;
 
       var $withLevel3 = $menu.children('li').filter(function () {
-        return $(this).children('ul.dropdown-menu.submenu-level-2, ul.submenu-level-2').length > 0;
+        return $(this).children('ul.dropdown-menu.submenu-level-2, ul.submenu-level-2, ul.nav-submenu').length > 0;
       });
 
       var $withoutLevel3 = $menu.children('li').filter(function () {
-        return $(this).children('ul.dropdown-menu.submenu-level-2, ul.submenu-level-2').length === 0;
+        return $(this).children('ul.dropdown-menu.submenu-level-2, ul.submenu-level-2, ul.nav-submenu').length === 0;
       });
 
       if ($withLevel3.length === 0 || $withoutLevel3.length < 2) return;
