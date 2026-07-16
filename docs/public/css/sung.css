@@ -58,7 +58,7 @@ main {
 
 .nav-submenu {
   position: absolute;
-  top: 50px;
+  top: 100%;
   left: 0;
   min-width: 220px;
 
@@ -66,27 +66,44 @@ main {
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity .2s ease;
+  transition: opacity .2s ease, visibility 0s .2s;
   z-index: 999;
-}
-
-.menu-dropdown:hover>.nav-submenu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.nav-submenu::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: transparent;
+  background: #fff;
 }
 
 /* end : fix nav hover hụt */
+
+/* Level 1 có con → mũi tên xuống */
+.menu-dropdown > .nav-link::after {
+  content: "\25BE";
+  margin-left: 4px;
+  font-size: 1em;
+}
+
+/* Desktop: hover li → submenu hiện, bridge chống giật */
+@media (min-width: 992px) {
+  /* Bridge trên li: ::after kéo dài vùng hover xuống meet submenu */
+  .header-3 .navbar-nav .menu-dropdown::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    height: 10px;
+  }
+
+  /* ẩn btn-submenu trên desktop */
+  .header-3 .navbar-nav .btn-submenu {
+    display: none !important;
+  }
+
+  /* Con không có cấp 3 → link đơn giản */
+  .header-3 .navbar-nav .nav-submenu > li:not(.menu-dropdown) > a {
+    display: block;
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+}
 
 /* header */
 /* Mega menu: cấp 2 cùng cấp sát trái, chỉ menu con (cấp 3) thụt lề */
@@ -4468,5 +4485,22 @@ li.nav-item.sv-menu:hover {
   /* Hide btn-submenu inside header-3 mega menu on desktop */
   .fe-header .header-3 .navbar-nav>.nav-item>.nav-submenu .btn-submenu {
     display: none !important;
+  }
+}
+
+/* ===== OVERRIDE: phải đặt SAU fe-header block để win specificity ===== */
+@media (min-width: 992px) {
+  .fe-header .header-3 .navbar-nav > .nav-item > .nav-submenu {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    display: none !important;
+  }
+
+  .fe-header .header-3 .navbar-nav > .nav-item:hover > .nav-submenu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    display: flex !important;
   }
 }

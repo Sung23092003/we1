@@ -20,8 +20,9 @@ $(document).ready(function () {
 
   if ($(".fe-header .offcanvas .toggle-menu-list-2").length) {
     $(".fe-header .offcanvas .toggle-menu-list-2").on("click", function (e) {
-      e.stopPropagation();
       const $subMenu1 = $(this).children(".sub-menu-list-2");
+      if ($subMenu1.length === 0) return;
+      e.stopPropagation();
 
       if ($subMenu1.hasClass("active")) {
         $subMenu1.removeClass("active").slideUp(200);
