@@ -396,6 +396,17 @@ jQuery(document).ready(function ($) {
 
   setupMenu($('.navbar-nav'));
 
+  // Detect level-1 items where ALL level-2 children have NO level-3 submenus
+  $('.header-3 .navbar-nav > .menu-dropdown').each(function () {
+    var $level1 = $(this);
+    var $submenu = $level1.children('.nav-submenu');
+    if (!$submenu.length) return;
+    var hasLevel3 = $submenu.children('li').children('.nav-submenu').length > 0;
+    if (!hasLevel3) {
+      $level1.addClass('no-level3');
+    }
+  });
+
   // Xử lý click btn-submenu
   $('.navbar-nav').on('click', '.btn-submenu', function (e) {
     e.preventDefault();
